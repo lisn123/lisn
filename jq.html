@@ -8,38 +8,20 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
   <style>
-    .toggler { width: 500px; height: 200px; position: relative; }
     #button { padding: .5em 1em; text-decoration: none; }
-    #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; }
-    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
-    .ui-effects-transfer { border: 2px dotted gray; }
   </style>
   <script>
   $(function() {
     // run the currently selected effect
     function runEffect() {
-      // get effect type from
-      var selectedEffect = $( "#effectTypes" ).val();
-
-      // most effect types need no options passed by default
-      var options = {};
-      // some effects have required parameters
-      if ( selectedEffect === "scale" ) {
-        options = { percent: 0 };
-      } else if ( selectedEffect === "transfer" ) {
-        options = { to: "#button", className: "ui-effects-transfer" };
-      } else if ( selectedEffect === "size" ) {
-        options = { to: { width: 200, height: 60 } };
-      }
-
       // run the effect
-      $( "#effect" ).effect( "blind", options, 500, callback );
+      $( "#msg1" ).effect( "blind", options, 500, callback );
     };
 
     // callback function to bring a hidden box back
     function callback() {
       setTimeout(function() {
-        $( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+        $( "#msg1" ).removeAttr( "style" ).hide().fadeIn();
       }, 1000 );
     };
 
@@ -53,21 +35,19 @@
 </head>
 <body>
 
-<div class="toggler">
-  <div id="effect" class="ui-widget-content ui-corner-all">
-    <h3 class="ui-widget-header ui-corner-all">Effect</h3>
-    <p>
-      Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
-    </p>
-  </div>
-</div>
-
-<select name="effects" id="effectTypes">
-  <option value="blind">Blind</option>
-  <option value="bounce">Bounce</option>
-</select>
 
 <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+<div style="width:247px;margin-left:72px; height:188px;">
+  <div class="message ui-widget-content ui-corner-all"  id="msg1" style="display:block"> <div class="test">This one is super old though</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg2" style="display:block; float:left; background:transparent; border:1px solid #006DC1 "> <div class="test" style="background:transparent">Killing it J! Straight FYAAH</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg3" style="display:block"> <div class="test">Oh my god! I love this fucking track. Remember Coachella?</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg4" style="display:none"> <div class="test">Ya that was so much fun</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg5" style="display:none"> <div class="test">How about this track though</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg6" style="display:none"> <div class="test">Nice. I've heard a couple of his tracks though</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg7" style="display:none"> <div class="test">He's is playing at Warfield in a weeks right?</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg8" style="display:none"> <div class="test">Wanna go check it out</div><div class="arrow1"></div><div class="arrow2"></div></div>
+  <div class="message ui-widget-content ui-corner-all"  id="msg9" style="display:none"> <div class="test">Let's do it</div><div class="arrow1"></div><div class="arrow2"></div></div>
+</div>
 
 
 </body>
