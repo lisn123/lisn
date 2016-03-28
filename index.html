@@ -25,17 +25,28 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
-    function messageboard(a) {
-      options={};
-    $( "#msg"+a ).hide( "drop", { direction: "down" }, "slow" );
-    $( "#msg"+(a+3) ).css("display","block" );
-    $( "#msg"+(a+3)).css("float","left" );
+    $(function() {
+      var a=1;
+      // run the currently selected effect
+      function runEffect() {
+        // run the effect
+        $( "#msg"+a ).effect( "blind",500);
+      };
 
-    if (a <= 6) {
-    setTimeout(function al(){messageboard((a+1));},5000);
-    }
+      // callback function to bring a hidden box back
+      function callback() {
+        setTimeout(function() {
+          $( "#msg1" ).removeAttr( "style" ).hide().fadeIn();
+        }, 1000 );
+      };
 
+      // set effect from select menu value
+      if (a<=9) {
+      setInterval(function() { runEffect();  a+=1;  return false;  },3000);
     }
+    else
+    clearInterval();
+    });
     </script>
     <style>
     .carousel-inner{
@@ -56,7 +67,7 @@
     }
     </style>
   </head>
-  <body style="background:#6967CE" onload="setTimeout(function al() { messageboard(1); },5000)">
+  <body style="background:#6967CE">
       <div class="container">
 
         <div class="row">
