@@ -1,33 +1,35 @@
 .message {
-  margin:1px 10px 10px 0px;
+  margin:8px 10px 8px 0px;
   padding:0 auto;
   max-width:174px;
-  height:31px;
+  height:auto;
   background:transparent;
   z-index:10000;
   float:right;
   border:none;
   position:relative;
   top:0px;
+  font-family: 'solomon_normalregular';
+  font-size:12px;
 }
 .message .test{
-  border-radius:2px;
-  width:174px;
-  height:31px;
-  background:#006DC1;
-  font-family:Arial;
+  border-radius:3px;
+  max-width:174px;
+  height:auto;
+  background:#4E4DA7;
+  font-family: 'solomon_normalregular';
   font-size:10px;
   color:white;
   padding:2px 1px 1px 2px;
   position:relative;
-padding:0 0 0 0;
+padding:8px 8.5px 8px 8.5px;
   margin:0 auto;
   overflow:hidden;
   float:left;
 }
 .message .arrow1 {
   border-right: 3px solid transparent;
-  border-bottom: 3px solid #006DC1;
+  border-bottom: 3px solid #6967CE;
   position:relative;
   margin:8px 9px 0 0;
   padding:0 auto;
@@ -38,7 +40,7 @@ padding:0 0 0 0;
 }
 .message .arrow2 {
   border-right: 3px solid transparent;
-  border-top: 3px solid #006DC1;
+  border-top: 3px solid #6967CE;
   position:relative;
   margin:0 auto;
   padding:0 auto;
@@ -49,16 +51,17 @@ padding:0 0 0 0;
 .message .testl{
   border-radius:2px;
   width:174px;
-  height:31px;
-  background:#fff;
+  height:auto;
+  background:transparent;
   font-family:Arial;
   font-size:10px;
-  color:#006DC1;
-  padding:2px 1px 1px 2px;
+  color:white;
+  padding:8px 8.5px 8px 8.5px;
   position:relative;
   margin:0 auto;
   overflow:hidden;
   float:right;
+  border:1px solid #4E4DA7;
 }
 .message .arrow1l {
   border-top: 3px solid transparent;
