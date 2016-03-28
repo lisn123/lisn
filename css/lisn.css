@@ -7,7 +7,7 @@
   z-index:10000;
   float:right;
   border:none;
-  display:block;
+
 }
 .message .test{
   border-radius:2px;
@@ -19,7 +19,7 @@
   color:white;
   padding:2px 1px 1px 2px;
   position:relative;
-  display:block;
+
   margin:0 auto;
   overflow:hidden;
   float:left;
@@ -32,7 +32,7 @@
   padding:0 auto;
   width:0px;
   height:0px;
-  display:block;
+
   float:left;
 }
 .message .arrow2 {
@@ -43,7 +43,6 @@
   padding:0 auto;
   width:0px;
   height:0px;
-  display:block;
   float:left;
 }
 .message .testl{
@@ -56,7 +55,6 @@
   color:#006DC1;
   padding:2px 1px 1px 2px;
   position:relative;
-  display:block;
   margin:0 auto;
   overflow:hidden;
   float:right;
@@ -69,7 +67,6 @@
   padding:0 auto;
   width:0px;
   height:0px;
-  display:block;
   float:right;
 }
 .message .arrow2l {
@@ -80,13 +77,20 @@
   padding:0 auto;
   width:0px;
   height:0px;
-  display:block;
   float:left;
 }
 
 #msg2,#msg4,#msg6,#msg8 {
-  display:block;float:left; background:transparent;
+  float:left; background:transparent;
 }
+#msg4,#msg5,#msg6,#msg7,#msg8,#msg9 {
+  display:none;
+}
+#msg1,#msg2,#msg3 {
+  display:block;
+}
+
+
 
 .bg {
 position:absolute;
