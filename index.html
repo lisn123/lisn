@@ -25,11 +25,12 @@
 
     <script>
 
-      $( function(){ var a=1;
+      $( function(){ var a=1;t=1000;
         while (a<6) {
         setTimeout ( $( ".message" ).animate({ "top": "-=48px" },"slow"  ),1000);
-      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},3000);
+      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},t);
           a=a+1;
+          t=t+1;
         };
 
       }
