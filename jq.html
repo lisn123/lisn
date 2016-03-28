@@ -33,7 +33,7 @@
       }
 
       // run the effect
-      $( "#effect" ).effect( selectedEffect, options, 500, callback );
+      $( "#effect" ).effect( "blind", options, 500, callback );
     };
 
     // callback function to bring a hidden box back
@@ -65,7 +65,6 @@
 <select name="effects" id="effectTypes">
   <option value="blind">Blind</option>
   <option value="bounce">Bounce</option>
-  
 </select>
 
 <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
