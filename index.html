@@ -25,12 +25,14 @@
 
     <script>
 
-      $( function(){ var a=1;t=1000;
-        while (a<9) {
-        setTimeout ( function(){$( ".message" ).animate({ "top": "-=48px" },"slow"  );},1000);
+      $( function(){ var a=1;var t=1000;
+      var f=1000;
+        while (a<7) {
+        setTimeout ( function(){$( ".message" ).animate({ "top": "-=48px" },"slow"  );},(f+3000));
           a=a+1;
+          f=f+2000;
         if (a>5 & a<9){
-      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},t);
+      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},t+3000);
           t=t+2000;
         };
       };
@@ -79,7 +81,7 @@
                 <img src="images/iphone@2x1.png" class="img-responsive" width="360px" style="padding:0px 42px 0px 42px">
               </div>
               <div class="bg" style="top:30px; left:155px;"><img src="images/dots@2x.png" class="img-responsive" width="80px" ></div>
-              <div class="bg" style="top:0px; left:287px;"><img src="images/mute@2x.png" class="img-responsive" width="43px" ></div>
+              <div class="bg" style="top:0px; left:287px;"><input type="image" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div>
       <div class="carouse">
         <div style="position:absolute;  width:243px; text-align:center; top:270px; margin:0 auto; font-family:'solomon_normalregular'; font-weight:800; font-size:24px;color:white;z-index:1000000;">Abyss<br style="line height:slight;"></div>
         <div style="position:absolute;width:243px;text-align:center; top:300px;color:white; margin:0 auto; font-family:'solomon_normalregular';font-weight:normal; margin:0 auto;padding:0 auto;font-size:12px;">Koan Soun</div>
