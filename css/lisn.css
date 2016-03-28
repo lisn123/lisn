@@ -7,6 +7,8 @@
   z-index:10000;
   float:right;
   border:none;
+  position:relative;
+  top:0px;
 
 }
 .message .test{
@@ -19,7 +21,7 @@
   color:white;
   padding:2px 1px 1px 2px;
   position:relative;
-
+padding:0 0 0 0;
   margin:0 auto;
   overflow:hidden;
   float:left;
@@ -84,17 +86,34 @@
   float:left; background:transparent;
 }
 #msg4,#msg5,#msg6,#msg7,#msg8,#msg9 {
-  display:none;
+  display:block;
 }
 #msg1,#msg2,#msg3 {
   display:block;
 }
 
-
+.carouse{
+  width:300px; height:300px; overflow:hidden;
+  padding:0 auto;
+}
+.carouse-inner{
+  width:4200px; height:350px; margin-left:60px; margin-top:72px ;overflow:hidden;
+}
+ .pic{
+  margin-top:0px;
+  width:300px;
+  height:300px;
+  padding:0 auto;
+  display:block;
+  float:left;
+  background-size:cover;
+  position:relative;
+  z-index:1000000;
+}
 
 .bg {
 position:absolute;
-z-index:100;
 background-size:cover;
 width:360px;
+z-index:1000;
 }

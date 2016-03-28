@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>animate demo</title>
+  <style>
+  div {
+    position: relative;
+    background-color: #abc;
+    top:1000px;
+    left: 1000px;
+    width: 1000px;
+    height: 10px;
+    margin: 5px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<button id="left">&laquo;</button>
+<button id="right">&raquo;</button>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+
+<script>
+$( "#right" ).click(function() {
+  $( ".block" ).animate({ "top": "+=100px" }, "slow" );
+});
+
+$( "#left" ).click(function(){
+  $( ".block" ).animate({ "top": "-=100px" }, "slow" );
+});
+</script>
+
+</body>
+</html>
