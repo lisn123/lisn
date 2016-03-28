@@ -17,12 +17,12 @@
     // run the currently selected effect
     function runEffect() {
       // run the effect
-      $( "#msg"+ a ).effect( "fade",500);
-    setTimeout( function(){  $( "#msg"+(a+3) ).css( "display","block");},500)
+      $( "#msg"+ a ).toggle( "drop",{direction:"up"}500);
+    setTimeout( function(){  $( "#msg"+(a+3) ).toggle( "drop",{direction:"up"}500);},500)
     };
 
     // set effect from select menu value
-    if (a<=6) {
+    if (a<=9) {
     setInterval(function() { runEffect();  a+=1;  return false;  },3000);
   }
   else {
