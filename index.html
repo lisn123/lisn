@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/lisn.css" rel="stylesheet">
@@ -21,10 +21,9 @@
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-    <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
     function messageboard(a) {
@@ -41,16 +40,18 @@
     </script>
     <style>
     .carousel-inner{
-      width:273px;
-      margin-left:22px;
+      width:300px;
+      margin-left:0px;
+      height:300px;
+      overflow:hidden
     }
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
         position:abolsute;
         top:50px;
-        width:251px;
-        margin-top:72px;
-        margin-left:72px;
+        width:273px;
+        margin-top:70px;
+        margin-left:60px;
 
 
     }
@@ -86,7 +87,7 @@
 
         <div class="row">
           <div class="col-lg-4 col-xs-2">
-            <div style="margin-top:132px; margin-left:180px;z-index:1000;">
+            <div style="margin-top:132px; margin-left:170px;z-index:1000; width:500px;">
               <img src="images/christian@2x1.png"  class="img-responsive" width="273px">
             </div>
           </div>
@@ -125,7 +126,7 @@
 
               <div style="width:247px;margin-left:72px; height:188px;">
                 <div class="message"  id="msg1" style="display:block"> <div class="test">This one is super old though</div><div class="arrow1"></div><div class="arrow2"></div></div>
-                <div class="message"  id="msg2" style="display:block"> <div class="test">Killing it J! Straight FYAAH</div><div class="arrow1"></div><div class="arrow2"></div></div>
+                <div class="message"  id="msg2" style="display:block; float:left; background:transparent; border:1px solid #006DC1 "> <div class="test" style="background:transparent">Killing it J! Straight FYAAH</div><div class="arrow1"></div><div class="arrow2"></div></div>
                 <div class="message"  id="msg3" style="display:block"> <div class="test">Oh my god! I love this fucking track. Remember Coachella?</div><div class="arrow1"></div><div class="arrow2"></div></div>
                 <div class="message"  id="msg4" style="display:none"> <div class="test">Ya that was so much fun</div><div class="arrow1"></div><div class="arrow2"></div></div>
                 <div class="message"  id="msg5" style="display:none"> <div class="test">How about this track though</div><div class="arrow1"></div><div class="arrow2"></div></div>
@@ -136,17 +137,16 @@
               </div>
           </div>
           <div class="col-lg-4 col-xs-2">
-                  <div style="margin-top:132px; margin-left:-60px;z-index:1000;overflow:hidden">
+                  <div style="margin-top:132px; margin-left:-82px;z-index:1000;overflow:hidden">
                     <img src="images/christian@2xy.png"  class="img-responsive" width="273px" z-index="1000">
-
-          </div>
+                  </div>
         </div>
 
       </div>
     </div>
       <div class="container-fluid">
 
-        <div class="row" style="background:#4E4DA7;border:solid #8A88E3 1px;">
+        <div class="row" style="background:#4E4DA7;border:solid #8A88E3 1px; margin-top:15px;">
           <div class="col-lg-6 col-xs-12" style="color:white;  padding:39px 0px 48px 48px; overflow:hidden; font-family: 'solomon_normalregular'; font-size:24px;">
             <span style="font-family: 'solomon_normalregular'; font-size:24px;"> We’re currently in private beta.<br></span>
                       <span style="font-family: 'solomon_normalregular'; font-size:24px;">Sign up to be notified about the launch!</span>
