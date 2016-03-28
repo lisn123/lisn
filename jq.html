@@ -14,16 +14,17 @@
   <script>
   $(function() {
     var a=1;
+    b=a+3;
     // run the currently selected effect
     function runEffect() {
       // run the effect
       $( "#msg"+ a ).toggle( "drop",{direction:"up"},500);
-    setTimeout( function(){  $( "#msg"+(a+1) ).toggle( "drop",{direction:"down"},500);},500)
+    setTimeout( function(){  $( "#msg"+(b) ).toggle( "drop",{direction:"down"},500);},500)
     };
 
     // set effect from select menu value
     if (a<=6) {
-    setInterval(function() { runEffect();  a=a+1;  return false;  },3000);
+    setInterval(function() { runEffect();  function(){a=a+1;}  return false;  },3000);
   }
   else {
     clearInterval();
