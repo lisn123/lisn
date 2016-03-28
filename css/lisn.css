@@ -104,7 +104,7 @@ padding:8px 8.5px 8px 8.5px;
   background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
   background: linear-gradient(transparent,#6967CE); /* Standard syntax (must be last) */
-  z-index:10000000;
+  z-index:100000;
 
 }
 .carouse-inner {
@@ -121,7 +121,7 @@ padding:8px 8.5px 8px 8.5px;
   float:left;
   background-size:cover;
   position:relative;
-  z-index:-1000;
+  z-index:-100000;
 }
 
 .bg {
