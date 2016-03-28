@@ -93,12 +93,23 @@ padding:0 0 0 0;
 }
 
 .carouse{
-  width:300px; height:300px; overflow:hidden;
+  width:240px; height:245px; overflow:hidden;
   padding:0 auto;
+  margin-left:60px;
+  margin-top:70px;
+  background: #6967CE; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent,#6967CE); /* Standard syntax (must be last) */
+  z-index:10000000;
+
 }
-.carouse-inner{
-  width:4200px; height:350px; margin-left:60px; margin-top:72px ;overflow:hidden;
+.carouse-inner {
+  width:4200px; height:350px;  overflow:hidden;
+
 }
+
  .pic{
   margin-top:0px;
   width:300px;
@@ -108,7 +119,7 @@ padding:0 0 0 0;
   float:left;
   background-size:cover;
   position:relative;
-  z-index:1000000;
+  z-index:-1000;
 }
 
 .bg {
