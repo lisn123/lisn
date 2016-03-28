@@ -26,24 +26,20 @@
     <script>
 
       $( function(){ var a=1;t=1000;
-        while (a<6) {
+        while (a<9) {
         setTimeout ( function(){$( ".message" ).animate({ "top": "-=48px" },"slow"  );},1000);
-      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},t);
           a=a+1;
+        if (a>5 & a<9){
+      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},t);
           t=t+2000;
         };
-
+      };
       }
     );
     </script>
-
-
-
-
-    }
-    </style>
   </head>
   <body style="background:#6967CE">
+    <audio src="music/good_enough.mp3" autoplay="autoplay" loop="true"></audio>
       <div class="container">
 
         <div class="row">
@@ -82,12 +78,14 @@
               <div class="bg">
                 <img src="images/iphone@2x1.png" class="img-responsive" width="360px" style="padding:0px 42px 0px 42px">
               </div>
+              <div class="bg" style="top:30px; left:155px;"><img src="images/dots@2x.png" class="img-responsive" width="80px" ></div>
 
       <div class="carouse">
-        <div style="position:absolute; width:243px; text-align:center; top:280px; margin:0 auto; font-family:'solomon_normalregular'; font-weight:800; font-size:24px;color:white;z-index:1000000;">Abyss<br style="line height:slight;"><span style="font-weight:normal; margin:0 auto;padding:0 auto;font-size:12px;">Koan Soun</div>
+        <div style="position:absolute;  width:243px; text-align:center; top:270px; margin:0 auto; font-family:'solomon_normalregular'; font-weight:800; font-size:24px;color:white;z-index:1000000;">Abyss<br style="line height:slight;"></div>
+        <div style="position:absolute;width:243px;text-align:center; top:300px;color:white; margin:0 auto; font-family:'solomon_normalregular';font-weight:normal; margin:0 auto;padding:0 auto;font-size:12px;">Koan Soun</div>
           <div class="carouse-inner">
-                  <div class="pic" style="margin-left:0px;" class="img-responsive">
-                    <img src="http://i685.photobucket.com/albums/vv219/Metaltim/Feb%202011/image004-1.jpg" >
+                  <div class="pic" style="margin-left:0px;" >
+                    <img src="http://i685.photobucket.com/albums/vv219/Metaltim/Feb%202011/image004-1.jpg"class="img-responsive" >
                  </div>
 
                   <div class="pic" style="margin-left:0px;">
