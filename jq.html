@@ -25,8 +25,10 @@
     if (a<=9) {
     setInterval(function() { runEffect();  a+=1;  return false;  },3000);
   }
-  else
+  else {}
+  clearInterval();
     setInterval(function() { runEffect();  a=1;  return false;  },3000);
+}
   });
   </script>
 </head>
