@@ -1,12 +1,13 @@
 .message {
   margin:10px 10px 10px 0px;
   padding:0 auto;
-  max-width:210px;
+  max-width:200px;
   height:38px;
   background:transparent;
   z-index:10000;
   float:right;
   border:none;
+  display:block;
 }
 .message .test{
   border-radius:2px;
@@ -44,6 +45,47 @@
   height:0px;
   display:block;
   float:left;
+}
+.message .testl{
+  border-radius:2px;
+  width:180px;
+  height:38px;
+  background:#fff;
+  font-family:Arial;
+  font-size:10px;
+  color:#006DC1;
+  padding:2px 1px 1px 2px;
+  position:relative;
+  display:block;
+  margin:0 auto;
+  overflow:hidden;
+  float:right;
+}
+.message .arrow1l {
+  border-top: 8px solid transparent;
+  border-right: 8px solid #fff;
+  position:relative;
+  margin:11px 0px 0px 0px;
+  padding:0 auto;
+  width:0px;
+  height:0px;
+  display:block;
+  float:right;
+}
+.message .arrow2l {
+  border-left: 8px solid transparent;
+  border-top: 8px solid #fff;
+  position:relative;
+  margin:0px 0px 0px 12px;
+  padding:0 auto;
+  width:0px;
+  height:0px;
+  display:block;
+  float:left;
+}
+
+#msg2,#msg4,#msg6,#msg8 {
+  display:block;float:left; background:transparent;
 }
 
 .bg {
