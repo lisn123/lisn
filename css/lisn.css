@@ -4,7 +4,45 @@
   font-family:'solomon_normalregular';
 
 }
-
+#iphone img{
+  margin:0px 37px 0px 37px;
+}
+#imgleft{
+  margin-top:132px; margin-left:-225px; position:absolute;z-index:1000; width:300px;overflow:hidden;
+}
+#imgright{
+  margin-top:132px; margin-left:310px; position:absolute;z-index:1000; max-width:225px;overflow:hidden;
+}
+#dots{
+  top:30px; left:160px;
+}
+#mute{
+  top:0px;
+  left:287px;
+}
+.song {
+  position:absolute;
+   width:243px;
+    text-align:center;
+     top:270px;
+     margin:0 auto;
+     font-family:'solomon_normalregular';
+     font-weight:800;
+     font-size:24px;
+     color:white;
+     z-index:1000000;
+}
+.artist {
+  position:absolute;width:243px;text-align:center; top:300px;color:white; margin:0 auto; font-family:'solomon_normalregular';font-weight:normal; margin:0 auto;padding:0 auto;font-size:12px;
+}
+#msgboard{
+  width:247px;
+  margin-left:50px;
+  height:180px;
+  overflow:hidden;
+  border-top:solid 2px #6967CE;
+  padding:0px 10px 0px 10px;
+}
 
 .message {
   margin:8px 10px 8px 0px;
@@ -106,7 +144,7 @@ padding:8px 8.5px 8px 8.5px;
   width:240px; height:245px; overflow:hidden;
   padding:0 auto;
   margin-left:60px;
-  margin-top:70px;
+  margin-top:72px;
   background: #6967CE; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
@@ -137,4 +175,74 @@ position:absolute;
 background-size:cover;
 width:360px;
 z-index:1000;
+}
+
+#foot1{
+  background:#4E4DA7;border-top:solid #8A88E3 1px; margin-top:10px;
+}
+#beta {
+  color:white;  padding:39px 0px 48px 48px; overflow:hidden; font-family: 'solomon_normalregular'; font-size:24px;
+}
+
+#beta-signup {
+  color:white;
+  overflow:hidden;
+  padding:43px 55px 43px 0px;
+  font-family: 'solomon_normalregular';
+  font-size:24px;
+}
+#inpt {
+  float:right;background:white;padding:0 auto; border-radius:4px;
+}
+#email {
+  font-size:12px;
+  margin-top:0px;
+  font-weight:bold;
+  color:black;
+  border-radius:4px;
+  border:none;
+  padding-left:16px;
+  width:413px;
+  height:47px;
+}
+#signup {
+  height:39px; width:100px; font-weight:bold; font-size:12px; border:none; background:#F5A623; margin-top:4px;margin-right:4px;padding-top:10px;
+}
+@media  screen and (max-width:500px) {
+  .carouse{
+    margin-left:54px;
+  }
+  #iphone img {
+    margin:0px 30px 0px 18px;
+  }
+#imgleft {
+  margin-left:-235px;
+}
+#imgright {
+  margin-left:310px;
+}
+#dots{
+  left:150px;
+}
+#mute{
+  left:282px;
+}
+#foot1 {
+  margin-top:22px;
+}
+#beta{
+    padding:19px 0px 24px 12px;
+    font-family: 'solomon_normalregular';
+    font-size:24px;
+  }
+  #beta-signup {
+    color:white;
+    overflow:hidden;
+    padding:21px 25px 43px 20px;
+    font-family: 'solomon_normalregular';
+    font-size:24px;
+  }
+  #email {
+    width:200px;
+  }
 }
