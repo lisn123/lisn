@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
@@ -25,19 +26,52 @@
 
     <script>
 
-      $( function(){ var a=1;var t=1000;
-      var f=1000;
-        while (a<7) {
-        setTimeout ( function(){$( ".message" ).animate({ "top": "-=48px" },"slow"  );},(f+3000));
-          a=a+1;
-          f=f+2000;
-        if (a>5 & a<9){
-      setTimeout (function(){$( ".pic" ).animate({ "left": "-=300px" },"slow");},t+3000);
-          t=t+2000;
-        };
-      };
-      }
-    );
+      $( function(){
+        a=1;
+
+        function myLoop(d){
+
+
+            setTimeout(function(){
+                      if(d<10){
+
+                          p=$('#msg'+d).css("height");
+                          m="-="+p;
+                          $( ".message" ).animate({ "top": m },100);
+                          if (d==3){
+                          $('#lisn').animate({"background":"#FFB926"},1000);
+                          $('#foot1').css("background","#FFB926");
+                          $('.carouse ').css("background","-webkit-linear-gradient(transparent,#FFB926)");
+                          $('#msgboard').css("background","#FFB926");
+                          $('#msgboard').css("border-top","none");
+                          }
+                          else if (d==6){
+                          $('#lisn').css("background","#3BE9B0");
+                          $('#foot1').css("background","#3BE9B0");
+                          $('.carouse').css("background","-webkit-linear-gradient(transparent,#3BE9B0)");
+                          $('#msgboard').css("background","#3BE9B0");
+                          $('#msgboard').css("border-top","none");
+                        }
+                        else if (d==9){
+                        $('#lisn').css("background","#FD636A");
+                        $('#foot1').css("background","#FD636A");
+                        $('.carouse').css("background","-webkit-linear-gradient(transparent,#FD636A)");
+                        $('#msgboard').css("background","#FD636A");
+                        $('#msgboard').css("border-top","none");
+                        $('#imgright img').attr('src','images/carl.png')
+                      }
+                          if (d<10){  $('#msg'+d).animate({ opacity: 0 },100);}
+                          myLoop(d+1);
+                        }
+                      },2000);
+                      }
+
+      myLoop(a);
+      });
+
+
+
+
     </script>
     <script>
      $('#mute').click( function(){
@@ -45,6 +79,19 @@
 
     });
 
+    </script>
+    <script>
+    $(function() {
+
+        var $body = $(document);
+        $body.bind('scroll', function() {
+            // "Disable" the horizontal scroll.
+            if ($body.scrollLeft() !== 0) {
+                $body.scrollLeft(0);
+            }
+        });
+
+    });
     </script>
   </head>
   <body id="lisn">
@@ -66,22 +113,22 @@
         <div class="row">
           <div class="col-lg-4 col-sm-4 col-md-4 col-xs-0">
           </div>
-          <div id="img-contain">
-          <div id="imgleft">
-            <img src="images/christian@2x1.png"  class="img-responsive" width="273px">
-          </div>
 
-          <div id="imgright">
-            <img src="images/christian@2xy.png" width="273px" >
-          </div>
-        </div>
           <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+            <div id="img-contain">
+            <div id="imgleft">
+              <img src="images/christian@2x1.png"  class="img-responsive" width="273px">
+            </div>
 
+            <div id="imgright">
+              <img src="images/christian@2xy.png" width="273px" >
+            </div>
+            </div>
               <div class="bg" id="iphone">
                 <center><img src="images/iphone@2x1.png" class="img-responsive" width="286px"></center>
               </div>
               <div class="bg" id="dots"><img src="images/dots@2x.png" class="img-responsive" width="80px" ></div>
-              <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div>
+              <!-- <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div> -->
 
 
               <div class="carouse">
@@ -107,38 +154,50 @@
 
               </div>
 
-              <div id="msgboard">
+          <div id="msgboard">
 
-                <div class="message ui-widget-content ui-corner-all"  id="msg1">
-                  <div class="test">This one is super old though</div>
+              <div class="message ui-widget-content ui-corner-all"  id="msg1">
+                  <div class="testl">whatsup, have you heard this yet?</div>
                 </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg2">
-                  <div class="testl" >Killing it J! Straight FYAAH</div>
-                 </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg3" >
-                   <div class="test">Oh my god! I love this fucking track. Remember Coachella?</div>
-                 </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg4" >
-                  <div class="testl">Ya that was so much fun</div>
-                </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg5" >
-                  <div class="test">How about this track though</div>
-                </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg6" >
-                  <div class="testl" >Nice. I've heard a couple of his tracks though</div>
-                </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg7">
-                  <div class="test">He's is playing at Warfield in a weeks right?</div>
-                </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg8">
-                <div class="testl" >Wanna go check it out</div>
-                </div>
-                <div class="message ui-widget-content ui-corner-all"  id="msg9" >
-                  <div class="test">Let's do it</div>
-                </div>
+
+              <div class="message ui-widget-content ui-corner-all"  id="msg2">
+                  <div class="testl">came out yesterday  </div>  </div>
+
+              <div class="message ui-widget-content ui-corner-all"  id="msg3">
+                  <div class="test">love me some honne!  </div>  </div>
+
+              <div class="message ui-widget-content ui-corner-all"  id="msg4">
+                  <div class="testl">they always remind me of you
+                            smiley face  </div>  </div>
+
+              <div class="message ui-widget-content ui-corner-all"  id="msg5">
+                  <div class="test">this is my favourite gambino track  </div>  </div>
+
+
+              <div class="message ui-widget-content ui-corner-all"  id="msg6">
+                  <div class="test">I love this track. CAMP. The whole album is pretty dope  </div>  </div>
+              <div class="message ui-widget-content ui-corner-all"  id="msg7">
+                  <div class="test">Have you seen his TV show though  </div>  </div>
+              <div class="message ui-widget-content ui-corner-all"  id="msg8">
+                  <div class="testl">Community? Yeah its hilarious haha  </div>  </div>
+
+              <div class="message ui-widget-content ui-corner-all"  id="msg9">
+                <div class="testl">i’ve been playing this on repeat for the last three days  teeth face  </div>  </div>
+
+            <div class="message ui-widget-content ui-corner-all"  id="msg10">
+                <div class="testl">#jaar kills it again  </div>  </div>
+            <div class="message ui-widget-content ui-corner-all"  id="msg11">
+              <div class="test">his beats are so tribal  </div>
+             </div>
+            <div class="message ui-widget-content ui-corner-all"  id="msg12">
+              <div class="test">I’m gonna make everyone Lisn to this</div>  </div>
+
+
+        </div>
+
 
             </div>
-          </div>
+
           <div class="col-lg-4 col-sm-3 col-md-2 col-xs-0">
           </div>
         </div>

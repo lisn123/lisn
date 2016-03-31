@@ -1,7 +1,9 @@
 
+
 #lisn {
   background:#6967CE;
   font-family:'solomon_normalregular';
+overflow-x: hidden;
 
 }
 #iphone img{
@@ -45,7 +47,7 @@
 }
 
 .message {
-  margin:8px 10px 8px 0px;
+  margin:8px 10px 8px 10px;
   padding:0 auto;
   max-width:174px;
   height:auto;
@@ -56,19 +58,22 @@
   position:relative;
   top:0px;
   font-family: 'solomon_normalregular';
-  font-size:12px;
+  font-size:18px;
+  font-weight:500;
+  display:block;
 }
 .message .test{
   border-radius:3px;
   max-width:174px;
+  width:auto;
   height:auto;
   background:#4E4DA7;
   font-family: 'solomon_normalregular';
-  font-size:10px;
+  font-size:12px;
   color:white;
-  padding:2px 1px 1px 2px;
+
   position:relative;
-padding:8px 8.5px 8px 8.5px;
+  padding:8px 8.5px 8px 8.5px;
   margin:0 auto;
   overflow:hidden;
   float:left;
@@ -77,7 +82,7 @@ padding:8px 8.5px 8px 8.5px;
   border-right: 3px solid transparent;
   border-bottom: 3px solid #6967CE;
   position:relative;
-  margin:8px 9px 0 0;
+  margin:8px 9px 0 8.5px;
   padding:0 auto;
   width:0px;
   height:0px;
@@ -99,12 +104,12 @@ padding:8px 8.5px 8px 8.5px;
   width:174px;
   height:auto;
   background:transparent;
-  font-family:Arial;
-  font-size:10px;
+  font-family:'solomon_normalregular';
+  font-size:12px;
   color:white;
   padding:8px 8.5px 8px 8.5px;
   position:relative;
-  margin:0 auto;
+  margin:0px 0px 0px 8.5px;
   overflow:hidden;
   float:right;
   border:1px solid #4E4DA7;
@@ -130,15 +135,13 @@ padding:8px 8.5px 8px 8.5px;
   float:left;
 }
 
-#msg2,#msg4,#msg6,#msg8 {
+#msg1,#msg2,#msg4,#msg9,#msg10,#msg11{
   float:left; background:transparent;
 }
-#msg4,#msg5,#msg6,#msg7,#msg8,#msg9 {
-  display:block;
+#msg3,#msg5,#msg6,#msg7,#msg8,#msg12,#msg13 {
+
 }
-#msg1,#msg2,#msg3 {
-  display:block;
-}
+
 
 .carouse{
   width:240px; height:245px; overflow:hidden;
@@ -146,7 +149,7 @@ padding:8px 8.5px 8px 8.5px;
   margin-left:60px;
   margin-top:72px;
   background: #6967CE; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
   background: linear-gradient(transparent,#6967CE); /* Standard syntax (must be last) */
@@ -177,7 +180,12 @@ width:360px;
 z-index:1000;
 }
 #img-contain {
-   position:absolute; width:375px; overflow:hidden; left:570px;  height:400px;  margin-top:132px;
+   position:absolute;
+    width:375px;
+    overflow:visible;
+    left:7px;
+      height:400px;
+        margin-top:132px;
 }
 #foot1{
   background:#4E4DA7;border-top:solid #8A88E3 1px; margin-top:10px;
@@ -218,7 +226,10 @@ z-index:1000;
     margin:0px 30px 0px 18px;
   }
   #img-contain {
+    overflow:hidden;
     left:0px;
+    right:0px;
+
   }
 #imgleft {
   margin-left:-200px;
@@ -233,12 +244,12 @@ z-index:1000;
   left:282px;
 }
 #foot1 {
-  margin-top:22px;
+  margin-top:43px;float:right;
 }
 #beta{
-    padding:19px 0px 24px 12px;
+    padding:19px 0px 12px 35px;
     font-family: 'solomon_normalregular';
-    font-size:24px;
+    font-size:16px;
   }
   #beta-signup {
     color:white;
