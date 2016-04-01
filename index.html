@@ -37,7 +37,8 @@
         function myLoop(messageIndex){
 
 
-            setTimeout(function(){
+            setTimeout(function(){ $('.message').css('top',"+=0");
+
                       if(messageIndex<16){
                           topMessageHeight=$('#msg'+messageIndex).outerHeight(true);
                           console.log("Message height is " + topMessageHeight + " for index " + messageIndex);
@@ -77,7 +78,20 @@
 
                           myLoop(messageIndex+1);
                         }
-                      },2000);
+                        else if (messageIndex==16){
+                          $('.message').animate({"top":"+=450px"},200);
+                          $( ".carouse-inner" ).animate({ "margin-left": "+=600px" },200);
+                          $('#lisn').css("background",colors["purple"]);
+                          $('.carouse ').css("background","linear-gradient(transparent,#6967CE)");
+                          $('#msgboard').css("background",colors["purple"]);
+                          $('#msgboard').css("border-top","none");
+                          $('#imgright img').attr('src','images/christian@2xy.png');
+                          $('#imgright img').attr('width','273');
+                        myLoop(5);
+
+                        }
+
+                    },2000);
                       }
 
       myLoop(a);
@@ -108,7 +122,7 @@
 
         <div class="row">
           <div class="col-lg-12 col-xs-12">
-              <center style="color:white; font-size:42px;font-weight:100"> <h1 style="font-size:72px; font-weight:bold;">Lisn</h1> Listen to music together </center>
+              <center style="color:white; font-family:solomon_sans_lightregular; font-size:36px;"> <h1 style="font-size:45px; font-family:solomon_sans_boldbold; font-weight:800; margin-bottom:-10px;">Lisn</h1> Listen to music together </center>
           </div>
         </div>
 
