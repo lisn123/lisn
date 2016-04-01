@@ -39,28 +39,33 @@
                           m="-="+p;
                           $( ".message" ).animate({ "top": m },100);
                           if (d==3){
-                          $('#lisn').animate({"background":"#FFB926"},1000);
-                          $('#foot1').css("background","#FFB926");
+                          $('#lisn').css("background","#FFB926");
+
                           $('.carouse ').css("background","-webkit-linear-gradient(transparent,#FFB926)");
                           $('#msgboard').css("background","#FFB926");
                           $('#msgboard').css("border-top","none");
+                          $('#imgright img').attr('src','images/faces/yel.png');
+                            $('#imgright img').attr('width','120px');
                           }
                           else if (d==6){
                           $('#lisn').css("background","#3BE9B0");
-                          $('#foot1').css("background","#3BE9B0");
+
                           $('.carouse').css("background","-webkit-linear-gradient(transparent,#3BE9B0)");
                           $('#msgboard').css("background","#3BE9B0");
                           $('#msgboard').css("border-top","none");
-                        }
-                        else if (d==9){
-                        $('#lisn').css("background","#FD636A");
-                        $('#foot1').css("background","#FD636A");
-                        $('.carouse').css("background","-webkit-linear-gradient(transparent,#FD636A)");
-                        $('#msgboard').css("background","#FD636A");
-                        $('#msgboard').css("border-top","none");
-                        $('#imgright img').attr('src','images/carl.png')
-                      }
-                          if (d<10){  $('#msg'+d).animate({ opacity: 0 },100);}
+                          $('#imgright img').attr('src','images/faces/do2.png');
+                            $('#imgright img').attr('width','121px');
+                          }
+                          else if (d==9){
+                          $('#lisn').css("background","#FD636A");
+
+                          $('.carouse').css("background","-webkit-linear-gradient(transparent,#FD636A)");
+                          $('#msgboard').css("background","#FD636A");
+                          $('#msgboard').css("border-top","none");
+                          $('#imgright img').attr('src','images/carl.png');
+                            $('#imgright img').attr('width','142px');
+                          }
+
                           myLoop(d+1);
                         }
                       },2000);
@@ -157,40 +162,40 @@
           <div id="msgboard">
 
               <div class="message ui-widget-content ui-corner-all"  id="msg1">
-                  <div class="testl">whatsup, have you heard this yet?</div>
+                whatsup, have you heard this yet?
                 </div>
 
               <div class="message ui-widget-content ui-corner-all"  id="msg2">
-                  <div class="testl">came out yesterday  </div>  </div>
+                  came out yesterday    </div>
 
               <div class="message ui-widget-content ui-corner-all"  id="msg3">
-                  <div class="test">love me some honne!  </div>  </div>
+                  love me some honne!  </div>
 
               <div class="message ui-widget-content ui-corner-all"  id="msg4">
-                  <div class="testl">they always remind me of you
-                            smiley face  </div>  </div>
+                  they always remind me of you
+                            smiley face    </div>
 
               <div class="message ui-widget-content ui-corner-all"  id="msg5">
-                  <div class="test">this is my favourite gambino track  </div>  </div>
+                  this is my favourite gambino track   </div>
 
 
               <div class="message ui-widget-content ui-corner-all"  id="msg6">
-                  <div class="test">I love this track. CAMP. The whole album is pretty dope  </div>  </div>
+                  I love this track. CAMP. The whole album is pretty dope    </div>
               <div class="message ui-widget-content ui-corner-all"  id="msg7">
-                  <div class="test">Have you seen his TV show though  </div>  </div>
+                  Have you seen his TV show though    </div>
               <div class="message ui-widget-content ui-corner-all"  id="msg8">
-                  <div class="testl">Community? Yeah its hilarious haha  </div>  </div>
+                  Community? Yeah its hilarious haha   </div>
 
               <div class="message ui-widget-content ui-corner-all"  id="msg9">
-                <div class="testl">i’ve been playing this on repeat for the last three days  teeth face  </div>  </div>
+              i’ve been playing this on repeat for the last three days  teeth face   </div>
 
             <div class="message ui-widget-content ui-corner-all"  id="msg10">
-                <div class="testl">#jaar kills it again  </div>  </div>
+              #jaar kills it again    </div>
             <div class="message ui-widget-content ui-corner-all"  id="msg11">
-              <div class="test">his beats are so tribal  </div>
+            his beats are so tribal
              </div>
             <div class="message ui-widget-content ui-corner-all"  id="msg12">
-              <div class="test">I’m gonna make everyone Lisn to this</div>  </div>
+              I’m gonna make everyone Lisn to this  </div>
 
 
         </div>
