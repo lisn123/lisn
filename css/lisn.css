@@ -161,6 +161,12 @@ z-index:1000;
   height:39px; width:100px; font-weight:bold; font-size:12px; border:none; background:#F5A623; margin-top:4px;margin-right:4px;padding-top:10px;
 }
 @media  screen and (max-width:500px) {
+  #lisnTitle{
+    font-size:33px; font-family:solomon_sans_boldbold; font-weight:800; margin-bottom:-10px; color:white;
+  }
+  #Tagline {
+    color:white; font-family:solomon_sans_lightregular; font-size:24px;
+  }
   .carouse{
     margin-left:54px;
   }
