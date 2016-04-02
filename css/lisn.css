@@ -6,6 +6,12 @@
   overflow-x: hidden;
   transition: background 0.3s ease;
 }
+#lisnTitle{
+  font-size:45px; font-family:solomon_sans_boldbold; font-weight:800; margin-bottom:-10px; color:white;
+}
+#Tagline {
+  color:white; font-family:solomon_sans_lightregular; font-size:36px;
+}
 #iphone img{
   margin:0px 37px 0px 37px;
 }
