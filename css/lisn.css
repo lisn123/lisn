@@ -1,37 +1,54 @@
 
 
 #lisn {
-  background:#6967CE;
-  font-family:'solomon_normalregular';
-  overflow-x: hidden;
-  transition: background 0.3s ease;
+     background:#6967CE;
+     font-family:'solomon_normalregular';
+     overflow-x: hidden;
+     transition: background 0.3s ease;
 }
 #lisnTitle{
-  font-size:45px; font-family:solomon_sans_boldbold; font-weight:800; margin-bottom:-10px; color:white;
+     font-size:45px;
+     font-family:solomon_sans_boldbold;
+     font-weight:800;
+     margin-bottom:-10px;
+     color:white;
 }
 #Tagline {
-  color:white; font-family:solomon_sans_lightregular; font-size:36px;
+     color:white;
+     font-family:solomon_sans_lightregular;
+     font-size:36px;
 }
 #iphone img{
-  margin:0px 37px 0px 37px;
+     margin:0px 37px 0px 37px;
 }
 #imgleft{
-  margin-top:0px; margin-left:-200px;position:absolute;z-index:10000; width:300px;overflow:hidden;
+     margin-top:0px;
+     margin-left:-200px;
+     position:absolute;
+     z-index:10000;
+     width:300px;
+     overflow:hidden;
 }
 #imgright{
-  margin-top:0px; left:310px; position:absolute;z-index:10000; max-width:225px;overflow:hidden;
+     margin-top:0px;
+     left:310px;
+     position:absolute;
+     z-index:10000;
+     max-width:225px;
+     overflow:hidden;
 }
 #dots{
-  top:30px; left:160px;
+     top:30px;
+     left:160px;
 }
 #mute{
-  top:0px;
-  left:287px;
+     top:0px;
+     left:287px;
 }
 .song {
-  position:absolute;
-   width:243px;
-    text-align:center;
+     position:absolute;
+     width:243px;
+     text-align:center;
      top:240px;
      margin:0 auto;
      font-family:'solomon_normalregular';
@@ -41,172 +58,223 @@
      z-index:1000000;
 }
 .artist {
-  position:absolute;width:243px;text-align:center; top:270px;color:white; margin:0 auto; font-family:'solomon_normalregular';font-weight:normal; margin:0 auto;padding:0 auto;font-size:12px;
+     position:absolute;
+     width:243px;
+     text-align:center;
+     top:270px;
+     color:white;
+     margin:0 auto;
+     font-family:'solomon_normalregular';
+     font-weight:normal;
+     margin:0 auto;
+     padding:0 auto;
+     font-size:12px;
 }
 #msgboard{
-  width:247px;
-  margin-left:55px;
-  height:210px;
-  overflow:hidden;
-  margin-top:20px;
-  border-top:solid 2px #6967CE;
-  padding:0px 10px 0px 10px;
+     width:247px;
+     margin-left:55px;
+     height:210px;
+     overflow:hidden;
+     margin-top:20px;
+     border-top:solid 2px #6967CE;
+     padding:0px 10px 0px 10px;
 }
 
 .message {
-  margin:4px 6px;
-  padding:8px;
-  max-width:174px;
-  height:auto;
-  z-index:10000;
-  position:relative;
-  font-family: 'solomon_normalregular';
-  font-size:12px;
-  font-weight:500;
-  display:block;
-  color:white;
-  border-radius:2px;
-  transition: top 0.3s ease-in-out;
-  top:0;
+     margin:4px 6px;
+     padding:8px;
+     max-width:174px;
+     height:auto;
+     z-index:10000;
+     position:relative;
+     font-family: 'solomon_normalregular';
+     font-size:12px;
+     font-weight:500;
+     display:block;
+     color:white;
+     border-radius:2px;
+     transition: top 0.3s ease-in-out;
+     top:0;
 }
 
 .received{
-  float:left; background:transparent;  border:solid 1px rgba(0,0,0,0.4);
+     float:left;
+     background:transparent;
+     border:solid 1px rgba(0,0,0,0.4);
 }
 
 .sent{
-  float:right; background:rgba(0, 0, 0, 0.4); color:rgba(255,255,255,1);
+     float:right;
+     background:rgba(0, 0, 0, 0.4);
+     color:rgba(255,255,255,1);
 }
 
 .carouse{
-  width:240px; height:200px; overflow:hidden;
-  padding:0 auto;
-  margin-left:60px;
-  margin-top:72px;
-
-  background: #6967CE; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(transparent,#6967CE); /* Standard syntax (must be last) */
-  z-index:100000;
-  transition: background 0.3s ease;
+      width:240px; height:200px; overflow:hidden;
+      padding:0 auto;
+      margin-left:60px;
+      margin-top:72px;
+      background: #6967CE; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(transparent,#6967CE); /* Standard syntax (must be last) */
+      z-index:100000;
+      transition: background 0.3s ease;
 
 }
 .carouse-inner {
-  width:4200px; height:200px;  overflow:hidden; margin-left:-180px;
+    width:4200px;
+    height:200px;
+    overflow:hidden;
+    margin-left:-180px;
 
 }
 
- .pic{
-  margin-top:0px;
-  width:200px;
-  height:200px;
-  padding:0 auto;
-  display:block;
-  float:left;
-  background-size:cover;
-  position:relative;
-  z-index:-100000;
+.pic{
+    margin-top:0px;
+    width:200px;
+    height:200px;
+    padding:0 auto;
+    display:block;
+    float:left;
+    background-size:cover;
+    position:relative;
+    z-index:-100000;
 }
 
 .pic img{
-  width:inherit;
+    width:inherit;
 
 }
 
 .bg {
-position:absolute;
-background-size:cover;
-width:360px;
-z-index:1000;
+    position:absolute;
+    background-size:cover;
+    width:360px;
+    z-index:1000;
 }
 #img-contain {
-   position:absolute;
+    position:absolute;
     width:375px;
     overflow:visible;
     left:7px;
-      height:400px;
-        margin-top:132px;
+    height:400px;
+    margin-top:132px;
 }
 #foot1{
-  background:rgba(0, 0, 0, 0.4); margin-top:10px;
+     background:rgba(0, 0, 0, 0.4);
+     margin-top:10px;
 }
 #beta {
-  color:white; opacity:1; padding:39px 0px 48px 180px; overflow:hidden; font-family: 'solomon_normalregular'; font-size:24px;
+     color:white;
+     opacity:1;
+     padding:39px 0px 48px 180px;
+     overflow:hidden;
+     font-family: 'solomon_normalregular';
+     font-size:24px;
 }
 
 #beta-signup {
-  color:white;
-  overflow:hidden;
-  padding:43px 150px 43px 0px;
-  font-family: 'solomon_normalregular';
-  font-size:24px;
+    color:white;
+    overflow:hidden;
+    padding:43px 150px 43px 0px;
+    font-family: 'solomon_normalregular';
+    font-size:24px;
 }
 #inpt {
-  float:right;background:white;padding:0 auto; border-radius:4px;
+    float:right;
+    background:white;
+    padding:0 auto;
+    border-radius:4px;
 }
 #email {
-  font-size:12px;
-  margin-top:0px;
-  font-weight:bold;
-  color:black;
-  border-radius:4px;
-  border:none;
-  padding-left:16px;
-  width:413px;
-  height:47px;
+    font-size:12px;
+    margin-top:0px;
+    font-weight:bold;
+    color:black;
+    border-radius:4px;
+    border:none;
+    padding-left:16px;
+    width:413px;
+    height:47px;
 }
 #signup {
-  height:39px; width:100px; font-weight:bold; font-size:12px; border:none; background:#F5A623; margin-top:4px;margin-right:4px;padding-top:10px;
+    height:39px;
+    width:100px;
+    font-weight:bold;
+    font-size:12px;
+    border:none;
+    background:#F5A623;
+    margin-top:4px;
+    margin-right:4px;
+    padding-top:10px;
 }
 @media  screen and (max-width:500px) {
-  #lisnTitle{
-    font-size:45px; font-family:solomon_sans_boldbold; font-weight:800; margin-bottom:-10px; color:white;
-  }
-  #Tagline {
-    color:white; font-family:solomon_sans_lightregular; font-size:24px;
-  }
-  .carouse{
+
+#lisnTitle{
+    font-size:45px;
+    font-family:solomon_sans_boldbold;
+    font-weight:800;
+    margin-bottom:-10px;
+    color:white;
+}
+#Tagline {
+    color:white;
+    font-family:solomon_sans_lightregular;
+    font-size:24px;
+}
+
+.carouse{
     margin-left:54px;
-  }
-  #iphone img {
+}
+
+#iphone img {
     margin:0px 30px 0px 18px;
-  }
-  #img-contain {
+}
+
+#img-contain {
     overflow:hidden;
     left:0px;
     right:0px;
+}
 
-  }
 #imgleft {
-  margin-left:-200px;
+    margin-left:-200px;
 }
+
 #imgright {
-  left:310px;
+    left:310px;
 }
+
 #dots{
-  left:150px;
+    left:150px;
 }
+
 #mute{
-  left:282px;
+    left:282px;
 }
+
 #foot1 {
-  margin-top:43px;float:right;
+    margin-top:43px;float:right;
 }
+
 #beta{
     padding:19px 0px 12px 35px;
     font-family: 'solomon_normalregular';
     font-size:16px;
-  }
-  #beta-signup {
+}
+
+#beta-signup {
     color:white;
     overflow:hidden;
     padding:21px 25px 43px 20px;
     font-family: 'solomon_normalregular';
     font-size:24px;
-  }
-  #email {
+}
+
+#email {
     width:200px;
-  }
+}
+
 }
