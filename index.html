@@ -34,6 +34,7 @@
           "green":"#55BA69",
           "red":"#FD636A"
         };
+        colorIndex = 1;
         function myLoop(messageIndex){
 
 
@@ -47,10 +48,7 @@
                           $('.message').css('top',offset);
                           // $( "#msgboard" ).animate({});
                           if (messageIndex==8){
-                            $('#song1').fadeOut(200);
-                            $('#artist1').fadeOut(200);
-                            $('#song2').fadeIn(200);
-                            $('#artist2').fadeIn(200);
+                            colorIndex += 1;
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
                             $('#lisn').css("background",colors["yellow"]);
                             $('.carouse ').css("background","linear-gradient(transparent,#DA9C16)");
@@ -59,16 +57,16 @@
                             $("#imgright").fadeTo(100,0.70, function() {
                                 $("#imgright img").attr("src",'images/homie_yellow.png').attr('width','170px');
                             }).fadeTo(100,1);
-                            $("#imgleft").fadeTo(100,0.70, function() {
-                                $('#imgleft img').attr('src','images/guy_yellow.png').attr('width','170px');
-                            }).fadeTo(100,1);
-                            $('#imgleft').css("margin-left","-97px");
+                            $("#img1").fadeOut(200);
+                            $("#img2").fadeIn(200);
+                            $('#imgleft').css("margin-left","-115px");
                           }
                           else if (messageIndex==11){
-                            $('#song2').fadeOut(200);
-                            $('#artist2').fadeOut(200);
-                            $('#song3').fadeIn(200);
-                            $('#artist3').fadeIn(200);
+                            colorIndex += 1;
+                            // $('#song2').fadeOut(200);
+                            // $('#artist2').fadeOut(200);
+                            // $('#song3').fadeIn(200);
+                            // $('#artist3').fadeIn(200);
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
                             $('#lisn').css("background",colors["green"]);
 
@@ -79,40 +77,42 @@
                             $("#imgright").fadeTo(100,0.70, function() {
                                 $("#imgright img").attr("src",'images/curly_green.png').attr('width','170px');
                             }).fadeTo(100,1);
-                            $("#imgleft").fadeTo(100,0.70, function() {
-                                $('#imgleft img').attr('src','images/guy_green.png').attr('width','170px');
-                            }).fadeTo(100,1);
-                            $('#imgleft').css("margin-left","-112px");
+                            $("#img2").fadeOut(200);
+                            $("#img3").fadeIn(200);
+                            $('#imgleft').css("margin-left","-116px");
                           }
                           else if (messageIndex==14){
-                            $('#song3').fadeOut(200);
-                            $('#artist3').fadeOut(200);
-                            $('#song4').fadeIn(200);
-                            $('#artist4').fadeIn(200);
+                            colorIndex += 1;
+                            // $('#song3').fadeOut(200);
+                            // $('#artist3').fadeOut(200);
+                            // $('#song4').fadeIn(200);
+                            // $('#artist4').fadeIn(200);
 
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
                             $('#lisn').css("background",colors["red"]);
-
                             $('.carouse').css("background","linear-gradient(transparent,#FD636A)");
                             $('#msgboard').css("background",colors["red"]);
                             $('#msgboard').css("border-top","none");
                             $("#imgright").fadeTo(100,0.70, function() {
                                 $("#imgright img").attr("src",'images/lady_red.png').attr('width','170px');
                             }).fadeTo(100,1);
-                            $("#imgleft").fadeTo(100,0.70, function() {
-                                $('#imgleft img').attr('src','images/guy_red.png').attr('width','170px');
-                            }).fadeTo(100,1);
-                            $('#imgleft').css("margin-left","-97px");
+                            $("#img3").fadeOut(200);
+                            $("#img4").fadeIn(200);
+                            $('#imgleft').css("margin-left","-115px");
                           }
-
+                          $('#song' + (colorIndex-1)).fadeOut(200);
+                          $('#artist'+ (colorIndex-1)).fadeOut(200);
+                          $('#song' + colorIndex).fadeIn(200);
+                          $('#artist' + colorIndex).fadeIn(200);
                           myLoop(messageIndex+1);
+
                         }
                         else if (messageIndex==16){
                           $('.message').animate({"top":"+=450px"},200);
-                          $('#song4').fadeOut(200);
-                          $('#artist4').fadeOut(200);
-                          $('#song1').fadeIn(200);
-                          $('#artist1').fadeIn(200);
+                          $('#song' + colorIndex).fadeOut(200);
+                          $('#artist' + colorIndex).fadeOut(200);
+                          $('#song' + 1).fadeIn(200);
+                          $('#artist' + 1).fadeIn(200);
                           $( ".carouse-inner" ).animate({ "margin-left": "+=600px" },200);
                           $('#lisn').css("background",colors["purple"]);
                           $('.carouse ').css("background","linear-gradient(transparent,#6967CE)");
@@ -121,11 +121,12 @@
                           $("#imgright").fadeTo(100,0.70, function() {
                               $("#imgright img").attr("src",'images/ruff_purple.png').attr('width','170px');
                           }).fadeTo(100,1);
-                          $("#imgleft").fadeTo(100,0.70, function() {
-                              $('#imgleft img').attr('src','images/guy_purple.png').attr('width','185px');
-                          }).fadeTo(100,1);
-                          $('#imgleft').css("margin-left","-112px");
-                        myLoop(5);
+                          $("#img4").fadeOut(200);
+                          $("#img1").fadeIn(200);
+
+                          $('#imgleft').css("margin-left","-130px");
+                          colorIndex = 1;
+                          myLoop(5);
 
                         }
 
@@ -182,7 +183,10 @@
               <!-- <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div> -->
               <div class="bg" id="img-contain">
               <div id="imgleft">
-                <img src="images/guy_purple.png"  class="img-responsive" width="185px">
+                <img id="img1" src="images/guy_purple.png"  class="img-responsive" width="185px"style="display:block">
+                <img id="img2" src="images/guy_yellow.png"  class="img-responsive" width="167px" style="display:none">
+                <img id="img3" src="images/guy_green.png"  class="img-responsive" width="169px" style="display:none">
+                <img id="img4" src="images/guy_red.png"  class="img-responsive" width="170px" style="display:none">
               </div>
 
               <div id="imgright">
