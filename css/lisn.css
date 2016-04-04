@@ -328,7 +328,7 @@
 }
 
 #beta{
-    padding:19px 0px 12px 35px;
+
     font-family:'solomon_normalregular';
     font-size:16px;
 
@@ -373,6 +373,39 @@ margin-left:-30px;
   display:block;
   margin-left:-80px;
 }
+#img1{
+  margin-left:15px;
+}
+#img2{margin-left:15px;}
+  #img3{}
+    #img4{}
+#beta-signup{
+  padding:10px;
+}
+#betaText{
+  font-family: 'solomon_sans_lightregular';
+  font-size: 18px;
+  width:100%;
+  padding-bottom:10px;
+  padding-top:20px;
+}
+#inpt {
+  padding:0px;
+    width:100%;
+    padding-bottom:40px;
+}
+#email{
+  width:65%;
+  padding-left:5%;
+}
+#signup{
+  width:30%;
+  margin-left:2%;
+}
+#beta-signup{
+  padding-bottom:40px;
+}
+
 
 
 .carouse {
