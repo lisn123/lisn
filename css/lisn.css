@@ -3,7 +3,7 @@
      background:#6967CE;
      font-family:'solomon_normalregular';
      overflow-x: hidden;
-     transition: background 0.3s ease;
+     transition: background 0.6s ease;
 }
 #lisnTitle{
      font-size:45px;
@@ -36,7 +36,6 @@
     overflow:visible;
     height:342px;
     margin:auto;
-
 }
 #imgleft{
      margin-left:-114px;
@@ -44,12 +43,15 @@
      width:185px;
      height:342px;
      overflow:hidden;
-
-
 }
 
 #imgleft img{
-  transition:         all 600ms easing’s Bezier curve;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
 }
 #imgright{
      margin-top:0px;
@@ -58,6 +60,20 @@
      position:absolute;
      height:342px;
      overflow:hidden;
+}
+#img2,#img3,#img4 {
+  opacity:0;
+}
+#imgright img{
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+}
+#imgr2,#imgr3,#imgr4 {
+  opacity:0;
 }
 
 .carouse{

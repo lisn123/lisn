@@ -54,12 +54,11 @@
                             $('.carouse ').css("background","linear-gradient(transparent,#DA9C16)");
                             $('#msgboard').css("background",colors["yellow"]);
                             $('#msgboard').css("border-top","none");
-                            $("#imgright").fadeTo(100,0.70, function() {
-                                $("#imgright img").attr("src",'images/homie_yellow.png').attr('width','170px');
-                            }).fadeTo(100,1);
-                            $('#img1').hide();
-                            $('#img2').show();
-                            $('#imgleft').css("margin-left","-115px");
+                            $('#imgr1').css('opacity','0');
+                            $('#imgr2').css('opacity','1');
+                            $('#img1').css('opacity','0');
+                            $('#img2').css('opacity','1');
+                            $('#imgleft').css("margin-left","-112px");
                           }
                           else if (messageIndex==11){
                             colorIndex += 1;
@@ -73,13 +72,12 @@
                             $('.carouse').css("background","linear-gradient(transparent,#55BA69)");
                             $('#msgboard').css("background",colors["green"]);
                             $('#msgboard').css("border-top","none");
-                            $('#imgright').fadeIn(1000);
-                            $("#imgright").fadeTo(100,0.70, function() {
-                                $("#imgright img").attr("src",'images/curly_green.png').attr('width','170px');
-                            }).fadeTo(100,1);
-                            $('#img2').hide();
-                            $('#img3').show();
-                            $('#imgleft').css("margin-left","-97px");
+                        
+                            $('#imgr2').css('opacity','0');
+                            $('#imgr3').css('opacity','1');
+                            $('#img2').css('opacity','0');
+                            $('#img3').css('opacity','1');
+                            $('#imgleft').css("margin-left","-115px");
                           }
                           else if (messageIndex==14){
                             colorIndex += 1;
@@ -94,12 +92,11 @@
                             $('.carouse').css("background","linear-gradient(transparent,#FD636A)");
                             $('#msgboard').css("background",colors["red"]);
                             $('#msgboard').css("border-top","none");
-                            $("#imgright").fadeTo(100,0.70, function() {
-                                $("#imgright img").attr("src",'images/lady_red.png').attr('width','170px');
-                            }).fadeTo(100,1);
-                            $('#img3').hide();
-                            $('#img4').show();
-                            $('#imgleft').css("margin-left","-97px");
+                            $('#imgr3').css('opacity','0');
+                            $('#imgr4').css('opacity','1');
+                            $('#img3').css('opacity','0');
+                            $('#img4').css('opacity','1');
+                            $('#imgleft').css("margin-left","-115px");
                           }
                           $('#song' + (colorIndex-1)).fadeOut(200);
                           $('#artist'+ (colorIndex-1)).fadeOut(200);
@@ -119,12 +116,11 @@
                           $('.carouse ').css("background","linear-gradient(transparent,#6967CE)");
                           $('#msgboard').css("background",colors["purple"]);
                           $('#msgboard').css("border-top","none");
-                          $("#imgright").fadeTo(100,0.70, function() {
-                              $("#imgright img").attr("src",'images/ruff_purple.png').attr('width','170px');
-                          }).fadeTo(100,1);
-                          $('#img4').hide();
-                          $('#img1').show();
-                          $('#imgleft').css("margin-left","-114px");
+                          $('#imgr4').css('opacity','0');
+                          $('#imgr1').css('opacity','1');
+                          $('#img4').css('opacity','0');
+                          $('#img1').css('opacity','1');
+                          $('#imgleft').css("margin-left","-115px");
                           colorIndex = 1;
                           myLoop(5);
 
@@ -183,14 +179,17 @@
               <!-- <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div> -->
               <div class="bg" id="img-contain">
               <div id="imgleft">
-                <img id="img1" src="images/yo.png"  class="img-responsive" width="169px"style="display:block">
-                <img id="img2" src="images/guy_yellow.png"  class="img-responsive" width="167px" style="display:none">
-                <img id="img3" src="images/guy_green.png"  class="img-responsive" width="169px" style="display:none">
-                <img id="img4" src="images/guy_red.png"  class="img-responsive" width="170px" style="display:none">
+                <img id="img1" src="images/yo.png"          class="img-responsive" width="169px">
+                <img id="img2" src="images/guy_yellow.png"  class="img-responsive" width="167px">
+                <img id="img3" src="images/guy_green.png"   class="img-responsive" width="169px" >
+                <img id="img4" src="images/guy_red.png"     class="img-responsive" width="170px" >
               </div>
 
               <div id="imgright">
-                <img src="images/ruff_purple.png" width="170px" >
+                <img id="imgr1" src="images/ruff_purple.png" width="170px">
+                <img id="imgr2" src="images/homie_yellow.png" width="170px">
+                <img id="imgr3" src="images/curly_green.png" width="170px">
+                <img id="imgr4" src="images/lady_red.png" width="170px">
               </div>
               </div>
               <div class="carouse">
