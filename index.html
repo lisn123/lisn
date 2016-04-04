@@ -57,8 +57,8 @@
                             $("#imgright").fadeTo(100,0.70, function() {
                                 $("#imgright img").attr("src",'images/homie_yellow.png').attr('width','170px');
                             }).fadeTo(100,1);
-                            $("#img1").fadeOut(200);
-                            $("#img2").fadeIn(200);
+                            $('#img1').hide();
+                            $('#img2').show();
                             $('#imgleft').css("margin-left","-115px");
                           }
                           else if (messageIndex==11){
@@ -77,9 +77,9 @@
                             $("#imgright").fadeTo(100,0.70, function() {
                                 $("#imgright img").attr("src",'images/curly_green.png').attr('width','170px');
                             }).fadeTo(100,1);
-                            $("#img2").fadeOut(200);
-                            $("#img3").fadeIn(200);
-                            $('#imgleft').css("margin-left","-116px");
+                            $('#img2').hide();
+                            $('#img3').show();
+                            $('#imgleft').css("margin-left","-97px");
                           }
                           else if (messageIndex==14){
                             colorIndex += 1;
@@ -90,15 +90,16 @@
 
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
                             $('#lisn').css("background",colors["red"]);
+
                             $('.carouse').css("background","linear-gradient(transparent,#FD636A)");
                             $('#msgboard').css("background",colors["red"]);
                             $('#msgboard').css("border-top","none");
                             $("#imgright").fadeTo(100,0.70, function() {
                                 $("#imgright img").attr("src",'images/lady_red.png').attr('width','170px');
                             }).fadeTo(100,1);
-                            $("#img3").fadeOut(200);
-                            $("#img4").fadeIn(200);
-                            $('#imgleft').css("margin-left","-115px");
+                            $('#img3').hide();
+                            $('#img4').show();
+                            $('#imgleft').css("margin-left","-97px");
                           }
                           $('#song' + (colorIndex-1)).fadeOut(200);
                           $('#artist'+ (colorIndex-1)).fadeOut(200);
@@ -121,10 +122,9 @@
                           $("#imgright").fadeTo(100,0.70, function() {
                               $("#imgright img").attr("src",'images/ruff_purple.png').attr('width','170px');
                           }).fadeTo(100,1);
-                          $("#img4").fadeOut(200);
-                          $("#img1").fadeIn(200);
-
-                          $('#imgleft').css("margin-left","-130px");
+                          $('#img4').hide();
+                          $('#img1').show();
+                          $('#imgleft').css("margin-left","-114px");
                           colorIndex = 1;
                           myLoop(5);
 
@@ -183,7 +183,7 @@
               <!-- <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div> -->
               <div class="bg" id="img-contain">
               <div id="imgleft">
-                <img id="img1" src="images/guy_purple.png"  class="img-responsive" width="185px"style="display:block">
+                <img id="img1" src="images/yo.png"  class="img-responsive" width="169px"style="display:block">
                 <img id="img2" src="images/guy_yellow.png"  class="img-responsive" width="167px" style="display:none">
                 <img id="img3" src="images/guy_green.png"  class="img-responsive" width="169px" style="display:none">
                 <img id="img4" src="images/guy_red.png"  class="img-responsive" width="170px" style="display:none">
@@ -194,13 +194,13 @@
               </div>
               </div>
               <div class="carouse">
-                <div class="song" id="song1">Warm on Cold Night<br style="line height:slight;"></div>
+                <div class="song" id="song1">Warm on Cold Night</div>
                 <div class="artist" id="artist1">Honne</div>
-                <div class="song" id="song2">CAMP<br style="line height:slight;"></div>
+                <div class="song" id="song2">CAMP</div>
                 <div class="artist" id="artist2" >Childish Gambino</div>
-                <div class="song" id="song3">What Kind Of Man<br style="line height:slight;"></div>
+                <div class="song" id="song3">What Kind Of Man</div>
                 <div class="artist" id="artist3">Nicholas Jaar</div>
-                <div class="song" id="song4">Step & Stagger<br style="line height:slight;"></div>
+                <div class="song" id="song4">Step & Stagger</div>
                 <div class="artist" id="artist4">Murlocs</div>
               <div class="carouse-inner">
 
@@ -274,9 +274,10 @@
       </div>
       <div class="container-fluid">
         <div  class="row" id="foot1">
+
           <div id="beta" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <span> We’re currently in private beta.<br></span>
-                      <span>Sign up to be notified about the launch!</span>
+            <span id="betaText"> We’re currently in private beta.<br>
+                      Sign up to be notified about the launch!</span>
           </div>
 
           <div id="beta-signup" class="col-lg-6 col-md-6  col-sm-12 col-xs-12">
