@@ -40,7 +40,7 @@
 #imgleft{
      margin-left:-114px;
      position:absolute;
-     width:185px;
+     width:170px;
      height:342px;
      overflow:hidden;
 }
@@ -86,7 +86,7 @@
       background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
       background: linear-gradient(transparent,#6967CE); /* Standard syntax (must be last) */
       z-index:100000;
-      transition: background 0.3s ease;
+      transition: background 0.6s ease;
 
 }
 .carouse-inner {
@@ -125,7 +125,7 @@
      color:white;
      z-index:100;
      background:transparent;
-      transition: background 0.3s ease;
+
 
 }
 .carouse .artist {
@@ -141,8 +141,8 @@
      z-index:1000;
      opacity: 0.7;
      background:transparent;
-    transition: background 0.3s ease;
-    margin-top:
+
+      margin-top:
 }
 #song1,#artist1{
   display:block;
@@ -250,26 +250,34 @@
     margin-right:4px;
     padding-top:10px;
 }
+
+
+
 @media screen and (min-width:1200px){
+                #foot1 {
+                  position:relative;
+                  margin-top:83px;
+                  width:auto;
+                  }
+}
+
+
+
+@media screen and (max-width:1200px){
+  .bg {
+    margin-left:48px;
+      }
+
+  #img-contain {
+    margin-left:48px;
+  }
+
   #foot1 {
     position:relative;
     margin-top:83px;
     width:auto;
   }
 
-}
-@media screen and (max-width:1200px){
-  .bg {
-    margin-left:48px;
-  }
-  #img-contain {
-    margin-left:48px;
-  }
-  #foot1 {
-    position:relative;
-    margin-top:83px;
-    width:auto;
-  }
 }
 
 @media screen and (max-width:992px){
@@ -284,13 +292,42 @@
     margin-top:83px;
     width:auto;
   }
-}
-@media screen and (min-width:500px) and(max-width:768px){
-  #iphone {
-    margin-left:60px;
+  #betaText{
+    margin:0 auto;
+    position:relative;
+    float:left;
   }
+  #inpt {
+    width:90%;
+  }
+  #email {
+    width:70%; padding:0 ;
+  }
+
+  #signup{
+    width:20%;
+    margin:0;
+  }
+}
+
+
+
+@media screen  and (max-width:768px){
+  .maincontent{
+    position:relative;
+    width:500px;
+    overflow:visible;
+    margin:0 auto;
+  }
+
+  #iphone {
+    margin-left:54px;
+    margin-top:-30px;
+  }
+
   #img-contain {
-    margin-left:60px;
+    margin-top:-30px;
+    margin-left:54px;
   }
 
   #foot1 {
@@ -301,7 +338,17 @@
 }
 
 @media screen and (max-width:500px)
-{
+  {
+    .maincontent{
+  position:absolute;
+  width:375px;
+  overflow:visible;
+  margin:0px auto;
+}
+
+.bg {
+  top:0px;position:absolute
+}
 
 #lisnTitle{
     font-size:45px;
@@ -317,27 +364,21 @@
     font-size:24px;
     margin-top:10px;
 }
-
-
 #iphone{
-  margin-left:-60px;overflow:hidden;
+  margin-top:-30px;
+  margin-left:-8px;
+  overflow:visible;
 }
 
 #img-contain {
-    margin-left:-70px;
-    width:411px;
+    margin-left:10px;
+    width:375px;
     overflow:visible;
     left:0px;
     right:0px;
 }
 
-#imgleft {
-    margin-left:-105px;
-}
 
-#imgright {
-    left:330px;
-}
 
 #foot1{
   position:relative; width:auto;   margin-top:83px;
@@ -345,7 +386,7 @@
 
 #beta{
 
-    font-family:'solomon_normalregular';
+    font-family:'solomon_sans_lightregular';
     font-size:16px;
 
 }
@@ -364,9 +405,13 @@
 
 }
 
+
+
+
+
 @media screen and (max-width:320px) {
 #iphone {
-  margin-left:-90px;
+  margin-left:0px;
 }
 #img-contain{
   display:none;
@@ -381,20 +426,31 @@ margin-left:-30px;
   margin-top:83px;
 }
 }
+
+
+
 @media screen and (width:375px) {
+
 #iphone {
-  margin-left:-70px;
+  margin-left:-10px;
 }
+
+
 #img-contain{
   display:block;
-  margin-left:-80px;
+  margin-left:8px;
+  z-index:10000000;
 }
-#img1{
-  margin-left:15px;
+
+
+
+.carouse {
+  margin-left:50px;
+  height:215px;
 }
-#img2{margin-left:15px;}
-  #img3{}
-    #img4{}
+#msgboard {
+  margin-left:50px;
+}
 #beta-signup{
   padding:10px;
 }
@@ -422,14 +478,6 @@ margin-left:-30px;
   padding-bottom:40px;
 }
 
-
-
-.carouse {
-margin-left:-10px;
-}
-#msgboard {
-  margin-left:-10px;
-}
 #foot1{
   margin-top:83px;
   margin-bottom:0px;

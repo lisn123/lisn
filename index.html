@@ -58,7 +58,7 @@
                             $('#imgr2').css('opacity','1');
                             $('#img1').css('opacity','0');
                             $('#img2').css('opacity','1');
-                            $('#imgleft').css("margin-left","-112px");
+                            $('#imgleft').css("margin-left","-114px");
                           }
                           else if (messageIndex==11){
                             colorIndex += 1;
@@ -72,12 +72,12 @@
                             $('.carouse').css("background","linear-gradient(transparent,#55BA69)");
                             $('#msgboard').css("background",colors["green"]);
                             $('#msgboard').css("border-top","none");
-                        
+
                             $('#imgr2').css('opacity','0');
                             $('#imgr3').css('opacity','1');
                             $('#img2').css('opacity','0');
                             $('#img3').css('opacity','1');
-                            $('#imgleft').css("margin-left","-115px");
+                            $('#imgleft').css("margin-left","-114px");
                           }
                           else if (messageIndex==14){
                             colorIndex += 1;
@@ -96,7 +96,7 @@
                             $('#imgr4').css('opacity','1');
                             $('#img3').css('opacity','0');
                             $('#img4').css('opacity','1');
-                            $('#imgleft').css("margin-left","-115px");
+                            $('#imgleft').css("margin-left","-114px");
                           }
                           $('#song' + (colorIndex-1)).fadeOut(200);
                           $('#artist'+ (colorIndex-1)).fadeOut(200);
@@ -107,7 +107,7 @@
                         }
                         else if (messageIndex==16){
                           $('.message').animate({"top":"+=450px"},200);
-                          $('#song' + colorIndex).fadeOut(200);
+                          $('#song' + colorIndex).css(200);
                           $('#artist' + colorIndex).fadeOut(200);
                           $('#song' + 1).fadeIn(200);
                           $('#artist' + 1).fadeIn(200);
@@ -120,7 +120,7 @@
                           $('#imgr1').css('opacity','1');
                           $('#img4').css('opacity','0');
                           $('#img1').css('opacity','1');
-                          $('#imgleft').css("margin-left","-115px");
+                          $('#imgleft').css("margin-left","-114px");
                           colorIndex = 1;
                           myLoop(5);
 
@@ -168,10 +168,10 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-sm-2 col-md-3 col-xs-2">
+          <div class="col-lg-4 col-sm-2 col-md-3 ">
           </div>
 
-          <div class="col-lg-4 col-sm-8 col-md-6 col-xs-8">
+          <div class="col-lg-4 col-sm-8 col-md-6 maincontent">
               <div class="bg" id="iphone">
                 <center><img src="images/iphone@2x1.png" class="img-responsive" width="286px"></center>
               </div>
@@ -179,17 +179,17 @@
               <!-- <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div> -->
               <div class="bg" id="img-contain">
               <div id="imgleft">
-                <img id="img1" src="images/yo.png"          class="img-responsive" width="169px">
-                <img id="img2" src="images/guy_yellow.png"  class="img-responsive" width="167px">
-                <img id="img3" src="images/guy_green.png"   class="img-responsive" width="169px" >
-                <img id="img4" src="images/guy_red.png"     class="img-responsive" width="170px" >
+                <img id="img1" src="images/purple_left.png"          class="img-responsive" width="170px">
+                <img id="img2" src="images/yellow_left.png"  class="img-responsive" width="170px">
+                <img id="img3" src="images/green_left.png"   class="img-responsive" width="170px" >
+                <img id="img4" src="images/red_left.png"     class="img-responsive" width="170px" >
               </div>
 
               <div id="imgright">
-                <img id="imgr1" src="images/ruff_purple.png" width="170px">
-                <img id="imgr2" src="images/homie_yellow.png" width="170px">
-                <img id="imgr3" src="images/curly_green.png" width="170px">
-                <img id="imgr4" src="images/lady_red.png" width="170px">
+                <img id="imgr1" src="images/purple_right.png" width="170px">
+                <img id="imgr2" src="images/yellow_right.png" width="170px">
+                <img id="imgr3" src="images/green_right.png" width="170px">
+                <img id="imgr4" src="images/red_right.png" width="170px">
               </div>
               </div>
               <div class="carouse">
@@ -267,19 +267,19 @@
 
             </div>
 
-          <div class="col-lg-4 col-sm-2 col-md-3 col-xs-2">
+          <div class="col-lg-4 col-sm-2 col-md-3">
           </div>
         </div>
       </div>
       <div class="container-fluid">
         <div  class="row" id="foot1">
 
-          <div id="beta" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <span id="betaText"> We’re currently in private beta.<br>
-                      Sign up to be notified about the launch!</span>
+          <div id="beta" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div id="betaText"> We’re currently in private beta.<br>
+                      Sign up to be notified about the launch!</div>
           </div>
 
-          <div id="beta-signup" class="col-lg-6 col-md-6  col-sm-12 col-xs-12">
+          <div id="beta-signup" class="col-lg-6 col-md-6  col-sm-6 col-xs-12">
               <div id="inpt">  <input type="text" id="email" placeholder="EMAIL ADDRESS" >
             <button type="button" id="signup" class="btn btn-default">SIGN UP</button></div>
           </div>
