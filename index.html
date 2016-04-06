@@ -18,9 +18,8 @@
     <![endif]-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
    <script>
 
@@ -90,10 +89,10 @@
                         }
                         else if (messageIndex==16){
                             $('.message').animate({"top":"+=450px"},200);
-                            $('#song' + colorIndex).css(200);
-                            $('#artist' + colorIndex).fadeOut(200);
-                            $('#song' + 1).fadeIn(200);
-                            $('#artist' + 1).fadeIn(200);
+                            $('#song' + colorIndex).css('opacity','0');
+                            $('#artist' + colorIndex).css('opacity','0');
+                            $('#song' + 1).css('opacity','1');
+                            $('#artist' + 1).css('opacity','0.7');
                             $( ".carouse-inner" ).animate({ "margin-left": "+=600px" },200);
                             $('#lisn').css("background",colors["purple"]);
                             $('.carouse ').css("background","linear-gradient(transparent,#6967CE)");
@@ -246,13 +245,54 @@
 
                   <div class="message ui-widget-content ui-corner-all sent"  id="msg12">
                   I’m gonna make everyone Lisn to this
-                </div>s
+                </div>
         </div>
 
 
             </div>
 
           <div class="col-lg-4 col-sm-2 col-md-3">
+          </div>
+        </div>
+        <div class="row features-row">
+          <div class="col-md-4 col-sm-12 feature">
+            <div class="feature-image">
+              <img src="./images/tile1.svg">
+            </div>
+            <div class="feature-description">
+              <p class="feature-title">
+                Synced Playback
+              </p>
+              <p class="feature-description">
+                Play tracks from friends in real time<br>It's like sharing earphones
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 feature">
+            <div class="feature-image">
+              <img src="./images/tile2.svg">
+            </div>
+            <div class="feature-description">
+              <p class="feature-title">
+                Hand Picked Music
+              </p>
+              <p class="feature-description">
+                The best recommendations come from people who know you.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 feature">
+            <div class="feature-image">
+              <img src="./images/tile3.svg">
+            </div>
+            <div class="feature-description">
+              <p class="feature-title">
+                Spotify + Soundcloud
+              </p>
+              <p class="feature-description">
+                Choose from over 130 million tracks from your favorite services.
+              </p>
+            </div>
           </div>
         </div>
       </div>

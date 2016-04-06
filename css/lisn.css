@@ -33,27 +33,28 @@
   height:40px;
 }
 .playing {
-  width: 10px;
-  height: 40px;
+  width: 5px;
+  height: 22px;
   display: inline-block;
   vertical-align: bottom;
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
   position: relative;
+  top:15px;
 }
 .playing:before, .playing:after {
   content: "";
-  width: 10px;
-  background: white;
+  width: 5px;
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   bottom: 0;
 }
 .playing:before {
-  height: 24px;
-  left: -13px;
+  height: 18px;
+  left: -8px;
 }
 .playing:after {
-  height: 32px;
-  right: -13px;
+  height: 16px;
+  right: -8px;
 }
 .playing.animated {
   animation: pulse linear 0.7s;
@@ -70,38 +71,38 @@
 
 @keyframes pulse {
   0% {
-    height: 40px;
+    height: 22px;
     margin-top: 0;
   }
   40% {
-    height: 10px;
-    margin-top: 30px;
+    height: 18px;
+    margin-top: 0;
   }
   100% {
-    height: 40px;
+    height: 16px;
     margin-top: 0;
   }
 }
 @keyframes pulse2 {
   0% {
-    height: 24px;
+    height: 16px;
   }
   40% {
     height: 8px;
   }
   100% {
-    height: 24px;
+    height: 22px;
   }
 }
 @keyframes pulse3 {
   0% {
-    height: 32px;
+    height: 12px;
   }
   40% {
     height: 12px;
   }
   100% {
-    height: 32px;
+    height: 16px;
   }
 }
 
@@ -335,7 +336,22 @@
     padding-top:10px;
 }
 
+.features-row{
+  margin-top: 150px;
+  text-align: center;
+}
 
+.feature-title{
+  font-family: 'solomon_sans_boldbold';
+  color: white;
+  font-size: 30px;
+}
+
+.feature-description{
+  font-family: 'solomon_normalregular';
+  color: white;
+  font-size: 18px;
+}
 
 @media screen and (min-width:1200px){
                 #foot1 {
@@ -383,14 +399,20 @@
   }
   #inpt {
     width:90%;
+    margin-left: 5%;
   }
   #email {
-    width:70%; padding:0 ;
+    width:calc(80% - 16px); padding-left:16px ;
   }
 
   #signup{
     width:20%;
-    margin:0;
+    margin-top:4px;
+    margin-right: 4px;
+  }
+
+  .feature{
+      padding-top: 50px;
   }
 }
 
@@ -504,7 +526,11 @@
 }
 
 #email {
-    width:200px;
+    width:calc(80% - 16px); padding-left:16px;
+}
+
+.playing{
+  top:25px;
 }
 
 }
@@ -558,6 +584,7 @@ margin-left:30px;
 }
 #beta-signup{
   padding:10px;
+  padding-bottom: 30px;
 }
 #betaText{
   font-family: 'solomon_sans_lightregular';
@@ -567,24 +594,27 @@ margin-left:30px;
   padding-top:20px;
 }
 #inpt {
-  padding:0px;
-    width:100%;
-    padding-bottom:40px;
+  width:90%;
+  margin-left: 5%;
 }
-#email{
-  width:65%;
-  padding-left:5%;
+#email {
+  width:calc(70% - 16px); padding-left:16px ;
 }
+
 #signup{
   width:30%;
-  margin-left:2%;
-}
-#beta-signup{
-  padding-bottom:40px;
+  margin-top:4px;
+  margin-right: 4px;
+  padding-top: 8px;
 }
 
 #foot1{
   margin-top:83px;
   margin-bottom:0px;
 }
+
+.features-row{
+  margin-top: 100px;
+}
+
 }
