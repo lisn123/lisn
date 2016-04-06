@@ -7,7 +7,6 @@
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Lisn - Share music with friends in real time</title>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/lisn.css" rel="stylesheet">
@@ -20,7 +19,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -44,9 +42,7 @@
                           topMessageHeight=$('#msg'+messageIndex).outerHeight(true);
                           console.log("Message height is " + topMessageHeight + " for index " + messageIndex);
                           offset="-="+topMessageHeight;
-                          // $( ".message" ).animate({ "top": offset },200);
                           $('.message').css('top',offset);
-                          // $( "#msgboard" ).animate({});
                           if (messageIndex==8){
                             colorIndex += 1;
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
@@ -62,17 +58,11 @@
                           }
                           else if (messageIndex==11){
                             colorIndex += 1;
-                            // $('#song2').fadeOut(200);
-                            // $('#artist2').fadeOut(200);
-                            // $('#song3').fadeIn(200);
-                            // $('#artist3').fadeIn(200);
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
                             $('#lisn').css("background",colors["green"]);
-
                             $('.carouse').css("background","linear-gradient(transparent,#55BA69)");
                             $('#msgboard').css("background",colors["green"]);
                             $('#msgboard').css("border-top","none");
-
                             $('#imgr2').css('opacity','0');
                             $('#imgr3').css('opacity','1');
                             $('#img2').css('opacity','0');
@@ -81,14 +71,8 @@
                           }
                           else if (messageIndex==14){
                             colorIndex += 1;
-                            // $('#song3').fadeOut(200);
-                            // $('#artist3').fadeOut(200);
-                            // $('#song4').fadeIn(200);
-                            // $('#artist4').fadeIn(200);
-
                             $( ".carouse-inner" ).animate({ "margin-left": "-=200px" },200);
                             $('#lisn').css("background",colors["red"]);
-
                             $('.carouse').css("background","linear-gradient(transparent,#FD636A)");
                             $('#msgboard').css("background",colors["red"]);
                             $('#msgboard').css("border-top","none");
@@ -98,56 +82,47 @@
                             $('#img4').css('opacity','1');
                             $('#imgleft').css("margin-left","-114px");
                           }
-                          $('#song' + (colorIndex-1)).fadeOut(200);
-                          $('#artist'+ (colorIndex-1)).fadeOut(200);
-                          $('#song' + colorIndex).fadeIn(200);
-                          $('#artist' + colorIndex).fadeIn(200);
+                          $('#song' + (colorIndex-1)).css('opacity','0');
+                          $('#artist'+ (colorIndex-1)).css('opacity','0');
+                          $('#song' + colorIndex).css('opacity','1');
+                          $('#artist' + colorIndex).css('opacity','0.7');
                           myLoop(messageIndex+1);
-
                         }
                         else if (messageIndex==16){
-                          $('.message').animate({"top":"+=450px"},200);
-                          $('#song' + colorIndex).css(200);
-                          $('#artist' + colorIndex).fadeOut(200);
-                          $('#song' + 1).fadeIn(200);
-                          $('#artist' + 1).fadeIn(200);
-                          $( ".carouse-inner" ).animate({ "margin-left": "+=600px" },200);
-                          $('#lisn').css("background",colors["purple"]);
-                          $('.carouse ').css("background","linear-gradient(transparent,#6967CE)");
-                          $('#msgboard').css("background",colors["purple"]);
-                          $('#msgboard').css("border-top","none");
-                          $('#imgr4').css('opacity','0');
-                          $('#imgr1').css('opacity','1');
-                          $('#img4').css('opacity','0');
-                          $('#img1').css('opacity','1');
-                          $('#imgleft').css("margin-left","-114px");
-                          colorIndex = 1;
-                          myLoop(5);
-
+                            $('.message').animate({"top":"+=450px"},200);
+                            $('#song' + colorIndex).css(200);
+                            $('#artist' + colorIndex).fadeOut(200);
+                            $('#song' + 1).fadeIn(200);
+                            $('#artist' + 1).fadeIn(200);
+                            $( ".carouse-inner" ).animate({ "margin-left": "+=600px" },200);
+                            $('#lisn').css("background",colors["purple"]);
+                            $('.carouse ').css("background","linear-gradient(transparent,#6967CE)");
+                            $('#msgboard').css("background",colors["purple"]);
+                            $('#msgboard').css("border-top","none");
+                            $('#imgr4').css('opacity','0');
+                            $('#imgr1').css('opacity','1');
+                            $('#img4').css('opacity','0');
+                            $('#img1').css('opacity','1');
+                            $('#imgleft').css("margin-left","-114px");
+                            colorIndex = 1;
+                            myLoop(5);
                         }
 
                     },2000);
                       }
 
-      myLoop(a);
+              myLoop(a);
       });
-
-
-
-
     </script>
 
     <script>
     $(function() {
-
         var $body = $(document);
         $body.bind('scroll', function() {
-            // "Disable" the horizontal scroll.
             if ($body.scrollLeft() !== 0) {
                 $body.scrollLeft(0);
             }
         });
-
     });
     </script>
   </head>
@@ -156,13 +131,13 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <center> <h1 id="lisnTitle">Lisn</h1> <h2 id="Tagline">Listen to music together</h2> </center>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-lg-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <center> <img src="images/app_store@2x.png" class="img-responsive" width="158px" style="margin:10px 0px 20px 0px"></center>
           </div>
         </div>
@@ -175,11 +150,11 @@
               <div class="bg" id="iphone">
                 <center><img src="images/iphone@2x1.png" class="img-responsive" width="286px"></center>
               </div>
-              <div id="dots"><img src="images/dots@2x.png" class="img-responsive" width="80px" ></div>
-              <!-- <div class="bg" id="mute"><input type="image" id="mute" value="pause" src="images/mute@2x.png" class="img-responsive" width="43px" height:"43px"/></div> -->
+              <div id="dots"><div class="animated playing"></div></div>
+
               <div class="bg" id="img-contain">
               <div id="imgleft">
-                <img id="img1" src="images/purple_left.png"          class="img-responsive" width="170px">
+                <img id="img1" src="images/purple_left.png"  class="img-responsive" width="170px">
                 <img id="img2" src="images/yellow_left.png"  class="img-responsive" width="170px">
                 <img id="img3" src="images/green_left.png"   class="img-responsive" width="170px" >
                 <img id="img4" src="images/red_left.png"     class="img-responsive" width="170px" >
@@ -188,24 +163,24 @@
               <div id="imgright">
                 <img id="imgr1" src="images/purple_right.png" width="170px">
                 <img id="imgr2" src="images/yellow_right.png" width="170px">
-                <img id="imgr3" src="images/green_right.png" width="170px">
-                <img id="imgr4" src="images/red_right.png" width="170px">
+                <img id="imgr3" src="images/green_right.png"  width="170px">
+                <img id="imgr4" src="images/red_right.png"    width="170px">
               </div>
               </div>
+
               <div class="carouse">
-                <div class="song" id="song1">Warm on Cold Night</div>
+                <div class="song"   id="song1">Warm on Cold Night</div>
                 <div class="artist" id="artist1">Honne</div>
-                <div class="song" id="song2">CAMP</div>
+                <div class="song"   id="song2">CAMP</div>
                 <div class="artist" id="artist2" >Childish Gambino</div>
-                <div class="song" id="song3">What Kind Of Man</div>
+                <div class="song"   id="song3">What Kind Of Man</div>
                 <div class="artist" id="artist3">Nicholas Jaar</div>
-                <div class="song" id="song4">Step & Stagger</div>
+                <div class="song"   id="song4">Step & Stagger</div>
                 <div class="artist" id="artist4">Murlocs</div>
+
               <div class="carouse-inner">
-
-
                   <div class="pic" style="margin-left:0px;" >
-                    <img src="images/art1.jpg"class="img-responsive" >
+                      <img src="images/art1.jpg"class="img-responsive" >
                   </div>
 
                   <div class="pic" style="margin-left:0px;">
@@ -219,49 +194,59 @@
                   <div class="pic" style="margin-left:0px;  ">
                     <img src="images/art4.jpg"class="img-responsive" >
                   </div>
-                </div>
-
               </div>
 
-          <div id="msgboard">
+          </div>
 
-              <div class="message ui-widget-content ui-corner-all received"  id="msg1">
-                whatsup, have you heard this yet?
-                </div>
+              <div id="msgboard">
 
-              <div class="message ui-widget-content ui-corner-all received"  id="msg2">
-                  came out yesterday    </div>
+                  <div class="message ui-widget-content ui-corner-all received"  id="msg1">
+                    whatsup, have you heard this yet?
+                  </div>
 
-              <div class="message ui-widget-content ui-corner-all sent"  id="msg3">
-                  love me some honne!  </div>
+                  <div class="message ui-widget-content ui-corner-all received"  id="msg2">
+                  came out yesterday
+                  </div>
 
-              <div class="message ui-widget-content ui-corner-all received"  id="msg4">
-                  they always remind me of you
-                            smiley face    </div>
+                  <div class="message ui-widget-content ui-corner-all sent"  id="msg3">
+                  love me some honne!
+                  </div>
 
-              <div class="message ui-widget-content ui-corner-all sent"  id="msg5">
-                  this is my favourite gambino track   </div>
+                  <div class="message ui-widget-content ui-corner-all received"  id="msg4">
+                  they always remind me of smiley face
+                  </div>
 
+                  <div class="message ui-widget-content ui-corner-all sent"  id="msg5">
+                  this is my favourite gambino track
+                  </div>
 
-              <div class="message ui-widget-content ui-corner-all sent"  id="msg6">
-                  I love this track. CAMP. The whole album is pretty dope    </div>
-              <div class="message ui-widget-content ui-corner-all sent"  id="msg7">
-                  Have you seen his TV show though    </div>
-              <div class="message ui-widget-content ui-corner-all sent"  id="msg8">
-                  Community? Yeah its hilarious haha   </div>
+                  <div class="message ui-widget-content ui-corner-all sent"  id="msg6">
+                  I love this track. CAMP. The whole album is pretty dope
+                  </div>
 
-              <div class="message ui-widget-content ui-corner-all received"  id="msg9">
-              i’ve been playing this on repeat for the last three days  teeth face   </div>
+                  <div class="message ui-widget-content ui-corner-all sent"  id="msg7">
+                  Have you seen his TV show though
+                  </div>
 
-            <div class="message ui-widget-content ui-corner-all received"  id="msg10">
-              #jaar kills it again    </div>
-            <div class="message ui-widget-content ui-corner-all received"  id="msg11">
-            his beats are so tribal
-             </div>
-            <div class="message ui-widget-content ui-corner-all sent"  id="msg12">
-              I’m gonna make everyone Lisn to this  </div>
+                  <div class="message ui-widget-content ui-corner-all sent"  id="msg8">
+                  Community? Yeah its hilarious haha
+                  </div>
 
+                  <div class="message ui-widget-content ui-corner-all received"  id="msg9">
+                  i’ve been playing this on repeat for the last three days  teeth face
+                  </div>
 
+                  <div class="message ui-widget-content ui-corner-all received"  id="msg10">
+                  #jaar kills it again
+                  </div>
+
+                  <div class="message ui-widget-content ui-corner-all received"  id="msg11">
+                  his beats are so tribal
+                  </div>
+
+                  <div class="message ui-widget-content ui-corner-all sent"  id="msg12">
+                  I’m gonna make everyone Lisn to this
+                </div>s
         </div>
 
 

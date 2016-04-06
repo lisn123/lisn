@@ -27,9 +27,86 @@
 }
 
 #dots{
-  max-width:80px;
-  margin:30px auto;
+  margin:10px auto;
+  width: 300px;
+  text-align: center;
+  height:40px;
 }
+.playing {
+  width: 10px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: bottom;
+  background: white;
+  position: relative;
+}
+.playing:before, .playing:after {
+  content: "";
+  width: 10px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+}
+.playing:before {
+  height: 24px;
+  left: -13px;
+}
+.playing:after {
+  height: 32px;
+  right: -13px;
+}
+.playing.animated {
+  animation: pulse linear 0.7s;
+  animation-iteration-count: infinite;
+}
+.playing.animated:before {
+  animation: pulse2 linear 1s;
+  animation-iteration-count: infinite;
+}
+.playing.animated:after {
+  animation: pulse3 linear 0.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    height: 40px;
+    margin-top: 0;
+  }
+  40% {
+    height: 10px;
+    margin-top: 30px;
+  }
+  100% {
+    height: 40px;
+    margin-top: 0;
+  }
+}
+@keyframes pulse2 {
+  0% {
+    height: 24px;
+  }
+  40% {
+    height: 8px;
+  }
+  100% {
+    height: 24px;
+  }
+}
+@keyframes pulse3 {
+  0% {
+    height: 32px;
+  }
+  40% {
+    height: 12px;
+  }
+  100% {
+    height: 32px;
+  }
+}
+
+
+
 #img-contain {
     top:132px;
     width:360px;
@@ -77,10 +154,12 @@
 }
 
 .carouse{
-      width:240px; height:208px; overflow:hidden;
+      width:240px;
+      height:232px;
+      overflow:hidden;
       padding:0 auto;
-      margin:30px auto;
-      background: #6967CE; /* For browsers that do not support gradients */
+      margin:20px auto;
+      background: #fff; /* For browsers that do not support gradients */
       background: -webkit-linear-gradient(transparent,#6967CE); /* For Safari 5.1 to 6.0 */
       background: -o-linear-gradient(transparent,#6967CE); /* For Opera 11.1 to 12.0 */
       background: -moz-linear-gradient(transparent,#6967CE); /* For Firefox 3.6 to 15 */
@@ -125,6 +204,7 @@
      color:white;
      z-index:100;
      background:transparent;
+     transition: opacity 0.6s ease;
 
 
 }
@@ -141,20 +221,23 @@
      z-index:1000;
      opacity: 0.7;
      background:transparent;
-
+     transition: opacity 0.6s ease;
       margin-top:
 }
-#song1,#artist1{
-  display:block;
+#song1{
+  opacity:1
+}
+#artist1{
+  opacity:0.7
 }
 #song2,#artist2{
-  display:none;
+  opacity:0;
 }
 #song3,#artist3{
-  display:none;
+  opacity:0;
 }
 #song4,#artist4{
-  display:none;
+  opacity:0;
 }
 
 
@@ -164,6 +247,7 @@
      height:200px;
      overflow:hidden;
      padding:0px 0px 0px 0px;
+     margin:-18px auto;
 }
 
 .message {
@@ -313,20 +397,27 @@
 
 
 @media screen  and (max-width:768px){
+
   .maincontent{
     position:relative;
     width:500px;
     overflow:visible;
     margin:0 auto;
   }
+  #dots{
+    margin-bottom:20px;
+  }
+  #carouse {
+    margin:20px auto;
+  }
 
   #iphone {
     margin-left:54px;
-    margin-top:-30px;
+    margin-top:-10px;
   }
 
   #img-contain {
-    margin-top:-30px;
+    margin-top:0px;
     margin-left:54px;
   }
 
@@ -339,7 +430,7 @@
 
 @media screen and (max-width:500px)
   {
-    .maincontent{
+      .maincontent{
   position:absolute;
   width:375px;
   overflow:visible;
@@ -364,10 +455,18 @@
     font-size:24px;
     margin-top:10px;
 }
+#dots {
+  margin-bottom:30px;
+}
 #iphone{
-  margin-top:-30px;
+  margin-top:0px;
   margin-left:-8px;
   overflow:visible;
+}
+
+.carouse {
+
+  margin:20px auto;
 }
 
 #img-contain {
@@ -377,7 +476,12 @@
     left:0px;
     right:0px;
 }
-
+.carouse .song {
+  top:250px;
+}
+.carouse .artist {
+  top:275px;
+}
 
 
 #foot1{
@@ -411,16 +515,16 @@
 
 @media screen and (max-width:320px) {
 #iphone {
-  margin-left:0px;
+  margin-left:-30px;
 }
 #img-contain{
   display:none;
 }
 .carouse {
-margin-left:-30px;
+margin-left:30px;
 }
 #msgboard {
-  margin-left:-30px;
+  margin-left:30px;
 }
 #foot1{
   margin-top:83px;
@@ -446,8 +550,9 @@ margin-left:-30px;
 
 .carouse {
   margin-left:50px;
-  height:215px;
+  height:240px;
 }
+
 #msgboard {
   margin-left:50px;
 }
